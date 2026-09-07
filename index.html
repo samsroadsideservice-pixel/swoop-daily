@@ -71,7 +71,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
   <div>
     <div class="eyebrow">Sam's Roadside Service · Swoop / Agero</div>
     <h1>Swoop Daily Detail</h1>
-    <div class="src">Data through Saturday Sep 5, 2026 · Raw Job Data export (raw_job_data_2026-09-06_last30.csv, raw_job_data_2026-09-06.csv) plus Swoop job emails for jobs the export omits.</div>
+    <div class="src">Data through Saturday Sep 5, 2026 · Raw Job Data export (raw_job_data_2026-09-06_last30.csv, raw_job_data_2026-09-06.csv, raw_job_data_2026-09-07.csv) plus Swoop job emails for jobs the export omits.</div>
     <div class="toggles">
       <div class="daypills" role="tablist" aria-label="Window"><span class="lbl">Window</span><button class="daypill" data-win="yesterday" role="tab">Yesterday · Sat Sep 5</button><button class="daypill" data-win="30" role="tab">30-day</button><button class="daypill" data-win="45" role="tab">45-day</button></div>
       <div class="daypills" role="tablist" aria-label="Base"><span class="lbl">Base</span><button class="daypill" data-basepill="All" role="tab">All</button><button class="daypill" data-basepill="Indy Main" role="tab">Indy Main</button><button class="daypill" data-basepill="South Indy" role="tab">South Indy</button></div>
@@ -217,7 +217,19 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
   <h2>Every job <small id="ledger-scope"></small></h2>
   <div class="tablewrap"><table id="ledger">
     <thead><tr><th>Time</th><th>Base</th><th>Service · vehicle</th><th>Zip</th><th>Miles</th><th>Driver</th><th>Outcome</th><th>ETA → ATA (min)</th><th>NPS</th><th>Loc · Photo</th><th class="right">Revenue</th><th>Job ID</th></tr></thead>
-    <tbody><tr data-day="2026-09-05" data-base="Indy Main">
+    <tbody><tr data-day="2026-09-06" data-base="">
+      <td class="mono">Sep 6 3:50 PM<span class="dim"> Evening</span></td>
+      <td>Out of territory <span class="tag notscored">not scored</span></td><td>Jump<span class="dim"> Silver</span></td>
+      <td class="mono">46032</td><td class="mono ">—</td><td>ROBERTORAMOS</td>
+      <td><span class="pill muted">Completed</span></td><td class="mono ">—</td>
+      <td class="mono">10</td><td class="mono">○ ○</td>
+      <td class="mono right">—</td><td class="mono dim">113877062</td></tr><tr data-day="2026-09-06" data-base="">
+      <td class="mono">Sep 6 2:00 PM<span class="dim"> Evening</span></td>
+      <td>Out of territory <span class="tag notscored">not scored</span></td><td>Fuel Delivery<span class="dim"> Brown</span></td>
+      <td class="mono">47201</td><td class="mono ">—</td><td>STEVEFITES</td>
+      <td><span class="pill muted">Completed</span></td><td class="mono ">—</td>
+      <td class="mono">10</td><td class="mono">○ ○</td>
+      <td class="mono right">—</td><td class="mono dim">113872365</td></tr><tr data-day="2026-09-05" data-base="Indy Main">
       <td class="mono">Sep 5 10:49 PM<span class="dim"> Overnight</span></td>
       <td>Indy Main</td><td>Lockout<span class="dim"> 2020 Chevrolet Trax</span></td>
       <td class="mono">46235</td><td class="mono ">11</td><td>Unassigned</td>
@@ -288,7 +300,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 </section>
 
 <section class="two">
-  <div class="panel"><h2>Not scored by Agero</h2><ul><li><b>Sep 5 7:51 PM</b> · Tire 2009 Ford F-350 · Sheridan 46069 · Sam Gillespie · Completed · NPS 5<div class="dim">Second provider on the job; customer lacked the wheel-lock key. Not in the Raw Job Data export because Territory Type was filtered to In Territory. Recorded from the Swoop Job Completed and New Review emails.</div></li></ul>
+  <div class="panel"><h2>Not scored by Agero</h2><ul><li><b>Sep 5 7:51 PM</b> · Tire 2009 Ford F-350 · Sheridan 46069 · Sam Gillespie · Completed · NPS 5<div class="dim">Second provider on the job; customer lacked the wheel-lock key. Not in the Raw Job Data export because Territory Type was filtered to In Territory. Recorded from the Swoop Job Completed and New Review emails.</div></li><li><b>Sep 6 2:00 PM</b> · Fuel Delivery Brown · Columbus 47201 · STEVEFITES · Completed · NPS 10<div class="dim">Reached a terminal status in Swoop email but is not in any Raw Job Data export. Usually out of territory or second provider. Confirm in Swoop.</div></li><li><b>Sep 6 3:50 PM</b> · Jump Silver · Carmel 46032 · ROBERTORAMOS · Completed · NPS 10<div class="dim">Reached a terminal status in Swoop email but is not in any Raw Job Data export. Usually out of territory or second provider. Confirm in Swoop.</div></li></ul>
     <div class="legend">Out-of-territory and second-provider jobs. Agero shows their surveys but only counts NPS when you were the first and only provider.</div></div>
   <div class="panel"><h2>Dispatcher checklist</h2><ul>
     <li>Before dispatching, call the customer to confirm they are still with the vehicle. 3 GOA in 2 days is the entire completion gap.</li>
