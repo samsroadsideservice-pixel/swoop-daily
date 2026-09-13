@@ -71,9 +71,9 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
   <div>
     <div class="eyebrow">Sam's Roadside Service · Swoop / Agero</div>
     <h1>Swoop Daily Detail</h1>
-    <div class="src">Data through Friday Sep 11, 2026 · Raw Job Data export (11 Raw Job Data exports, newest raw_job_data_2026-09-12_pane.csv) plus Swoop job emails for jobs the export omits. · <a href="territory.html" style="color:var(--accent-ink);font-weight:600">Territory map ↗</a></div>
+    <div class="src">Data through Saturday Sep 12, 2026 · Raw Job Data export (12 Raw Job Data exports, newest raw_job_data_2026-09-13_pane.csv) plus Swoop job emails for jobs the export omits. · <a href="territory.html" style="color:var(--accent-ink);font-weight:600">Territory map ↗</a></div>
     <div class="toggles">
-      <div class="daypills" role="tablist" aria-label="Window"><span class="lbl">Window</span><button class="daypill" data-win="yesterday" role="tab">Yesterday · Fri Sep 11</button><button class="daypill" data-win="30" role="tab">30-day</button><button class="daypill" data-win="45" role="tab">45-day</button></div>
+      <div class="daypills" role="tablist" aria-label="Window"><span class="lbl">Window</span><button class="daypill" data-win="yesterday" role="tab">Yesterday · Sat Sep 12</button><button class="daypill" data-win="30" role="tab">30-day</button><button class="daypill" data-win="45" role="tab">45-day</button></div>
       <div class="daypills" role="tablist" aria-label="Base"><span class="lbl">Base</span><button class="daypill" data-basepill="All" role="tab">All</button><button class="daypill" data-basepill="Indy Main" role="tab">Indy Main</button><button class="daypill" data-basepill="South Indy" role="tab">South Indy</button></div>
     </div>
   </div>
@@ -85,128 +85,128 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 </header>
 
 <div class="panel compare" data-win="yesterday" hidden><h2>Which base needs attention <small>yesterday · highlighted cell is the weaker base on that line</small></h2>
-          <div class="tablewrap"><table class="cmp"><thead><tr><th></th><th>Indy Main</th><th>South Indy</th></tr></thead><tbody><tr><th>Offers</th><td>5</td><td>2</td></tr><tr><th>Completion</th><td>100% <span class="dim">3/3</span></td><td>100% <span class="dim">2/2</span></td></tr><tr><th>GOA</th><td>0</td><td>0</td></tr><tr><th>Reassigned</th><td>0</td><td>0</td></tr><tr><th>NPS</th><td>— <span class="dim">0 resp</span></td><td>100 <span class="dim">1 resp</span></td></tr><tr><th>ETA accuracy</th><td class="attn">66.7%</td><td>100%</td></tr><tr><th>Location sharing</th><td>0%</td><td>0%</td></tr><tr><th>Avg run (mi)</th><td>6</td><td class="attn">34</td></tr><tr><th>Revenue</th><td>$84.00</td><td>$117.35</td></tr></tbody></table></div></div><div class="panel compare" data-win="30" hidden><h2>Which base needs attention <small>last 30 days · highlighted cell is the weaker base on that line</small></h2>
-          <div class="tablewrap"><table class="cmp"><thead><tr><th></th><th>Indy Main</th><th>South Indy</th></tr></thead><tbody><tr><th>Offers</th><td>26</td><td>23</td></tr><tr><th>Completion</th><td class="attn">81% <span class="dim">17/21</span></td><td>82.6% <span class="dim">19/23</span></td></tr><tr><th>GOA</th><td>1</td><td class="attn">3</td></tr><tr><th>Reassigned</th><td class="attn">3</td><td>0</td></tr><tr><th>NPS</th><td>100 <span class="dim">9 resp</span></td><td class="attn">92 <span class="dim">13 resp</span></td></tr><tr><th>ETA accuracy</th><td class="attn">42.9%</td><td>78.6%</td></tr><tr><th>Location sharing</th><td class="attn">0%</td><td>13%</td></tr><tr><th>Avg run (mi)</th><td>9</td><td class="attn">21</td></tr><tr><th>Revenue</th><td>$541.78</td><td>$821.15</td></tr></tbody></table></div></div><div class="panel compare" data-win="45" hidden><h2>Which base needs attention <small>last 45 days · highlighted cell is the weaker base on that line</small></h2>
-          <div class="tablewrap"><table class="cmp"><thead><tr><th></th><th>Indy Main</th><th>South Indy</th></tr></thead><tbody><tr><th>Offers</th><td>28</td><td>26</td></tr><tr><th>Completion</th><td class="attn">81.8% <span class="dim">18/22</span></td><td>84% <span class="dim">21/25</span></td></tr><tr><th>GOA</th><td>1</td><td class="attn">3</td></tr><tr><th>Reassigned</th><td class="attn">3</td><td>0</td></tr><tr><th>NPS</th><td>100 <span class="dim">10 resp</span></td><td class="attn">93 <span class="dim">14 resp</span></td></tr><tr><th>ETA accuracy</th><td class="attn">42.9%</td><td>73.3%</td></tr><tr><th>Location sharing</th><td class="attn">0%</td><td>11.5%</td></tr><tr><th>Avg run (mi)</th><td>10</td><td class="attn">22</td></tr><tr><th>Revenue</th><td>$567.48</td><td>$943.30</td></tr></tbody></table></div></div>
-<div data-base="All" hidden><div class="flags"><div class="flag bad"><span class="flag-dot"></span><span>4 GOA on 47 scorable jobs in the 45-day window. Completion 83% against Agero's 90% line. Gap = 4 GOA + 3 reassigned + 1 unsuccessful.</span></div><div class="flag bad"><span class="flag-dot"></span><span>3 reassigns in the 45-day window: jobs we accepted and then cancelled. Agero counts a reassign against completion AND acceptance, goal under 1%, and provider cancels are not billable. Only accept what we can run; if it must go back, tell Agero inside 15 minutes.</span></div><div class="flag warn"><span class="flag-dot"></span><span>1 unsuccessful job in the 45-day window (counts against completion per Agero).</span></div><div class="flag warn"><span class="flag-dot"></span><span>Location sharing 6.1% vs 85%. Per Agero (Sheila, Sep 9) this is a proximity bonus, not a penalty: when a driver is closer than the shop, Agero uses the driver's location in selection. Post-dispatch sharing is fine (88%); the gap is PRE-dispatch, so drivers keep the DA app sharing all shift. 5 of 49 jobs were on the owner login.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Photo quality 13.9% vs 85%. Drop-off photos were uploaded; Agero also wants four pickup corners, VIN, plate and pre-existing damage.</span></div><div class="flag warn"><span class="flag-dot"></span><span>11 of 28 arrivals past the quoted ETA. Worst: Steve Fites to 46151 (32 mi), quoted 90 min, arrived at 127.</span></div><div class="flag good"><span class="flag-dot"></span><span>Acceptance 100%. Every offer taken, nothing expired.</span></div><div class="flag note"><span class="flag-dot"></span><span>18 out-of-territory jobs in the 45-day window, shown in the ledger and the not-scored panel, excluded from every score.</span></div><div class="flag note"><span class="flag-dot"></span><span>Data covers Oct 8, 2024 to Sep 11, 2026. The account was on insurance hold Jul 27 to Sep 4.</span></div></div>
-<section><h2>30-day scorecard vs Agero targets <small>49 offers · All</small></h2><div class="meters">
+          <div class="tablewrap"><table class="cmp"><thead><tr><th></th><th>Indy Main</th><th>South Indy</th></tr></thead><tbody><tr><th>Offers</th><td>9</td><td>2</td></tr><tr><th>Completion</th><td>100% <span class="dim">9/9</span></td><td>100% <span class="dim">2/2</span></td></tr><tr><th>GOA</th><td>0</td><td>0</td></tr><tr><th>Reassigned</th><td>0</td><td>0</td></tr><tr><th>NPS</th><td>100 <span class="dim">5 resp</span></td><td>100 <span class="dim">1 resp</span></td></tr><tr><th>ETA accuracy</th><td class="attn">71.4%</td><td>100%</td></tr><tr><th>Location sharing</th><td>0%</td><td>0%</td></tr><tr><th>Avg run (mi)</th><td class="attn">10</td><td>9</td></tr><tr><th>Revenue</th><td>$221.40</td><td>$71.40</td></tr></tbody></table></div></div><div class="panel compare" data-win="30" hidden><h2>Which base needs attention <small>last 30 days · highlighted cell is the weaker base on that line</small></h2>
+          <div class="tablewrap"><table class="cmp"><thead><tr><th></th><th>Indy Main</th><th>South Indy</th></tr></thead><tbody><tr><th>Offers</th><td>35</td><td>25</td></tr><tr><th>Completion</th><td>86.7% <span class="dim">26/30</span></td><td class="attn">84% <span class="dim">21/25</span></td></tr><tr><th>GOA</th><td>1</td><td class="attn">3</td></tr><tr><th>Reassigned</th><td class="attn">3</td><td>0</td></tr><tr><th>NPS</th><td>100 <span class="dim">14 resp</span></td><td class="attn">93 <span class="dim">14 resp</span></td></tr><tr><th>ETA accuracy</th><td class="attn">52.4%</td><td>80%</td></tr><tr><th>Location sharing</th><td class="attn">0%</td><td>12%</td></tr><tr><th>Avg run (mi)</th><td>10</td><td class="attn">20</td></tr><tr><th>Revenue</th><td>$763.18</td><td>$892.55</td></tr></tbody></table></div></div><div class="panel compare" data-win="45" hidden><h2>Which base needs attention <small>last 45 days · highlighted cell is the weaker base on that line</small></h2>
+          <div class="tablewrap"><table class="cmp"><thead><tr><th></th><th>Indy Main</th><th>South Indy</th></tr></thead><tbody><tr><th>Offers</th><td>36</td><td>25</td></tr><tr><th>Completion</th><td>86.7% <span class="dim">26/30</span></td><td class="attn">84% <span class="dim">21/25</span></td></tr><tr><th>GOA</th><td>1</td><td class="attn">3</td></tr><tr><th>Reassigned</th><td class="attn">3</td><td>0</td></tr><tr><th>NPS</th><td>100 <span class="dim">14 resp</span></td><td class="attn">93 <span class="dim">14 resp</span></td></tr><tr><th>ETA accuracy</th><td class="attn">52.4%</td><td>80%</td></tr><tr><th>Location sharing</th><td class="attn">0%</td><td>12%</td></tr><tr><th>Avg run (mi)</th><td>10</td><td class="attn">20</td></tr><tr><th>Revenue</th><td>$763.18</td><td>$892.55</td></tr></tbody></table></div></div>
+<div data-base="All" hidden><div class="flags"><div class="flag bad"><span class="flag-dot"></span><span>4 GOA on 55 scorable jobs in the 45-day window. Completion 85.5% against Agero's 90% line. Gap = 4 GOA + 3 reassigned + 1 unsuccessful.</span></div><div class="flag bad"><span class="flag-dot"></span><span>3 reassigns in the 45-day window: jobs we accepted and then cancelled. Agero counts a reassign against completion AND acceptance, goal under 1%, and provider cancels are not billable. Only accept what we can run; if it must go back, tell Agero inside 15 minutes.</span></div><div class="flag warn"><span class="flag-dot"></span><span>1 unsuccessful job in the 45-day window (counts against completion per Agero).</span></div><div class="flag warn"><span class="flag-dot"></span><span>Location sharing 5% vs 85%. Per Agero (Sheila, Sep 9) this is a proximity bonus, not a penalty: when a driver is closer than the shop, Agero uses the driver's location in selection. Post-dispatch sharing is fine (88%); the gap is PRE-dispatch, so drivers keep the DA app sharing all shift. 6 of 60 jobs were on the owner login.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Photo quality 34% vs 85%. Drop-off photos were uploaded; Agero also wants four pickup corners, VIN, plate and pre-existing damage.</span></div><div class="flag warn"><span class="flag-dot"></span><span>13 of 36 arrivals past the quoted ETA. Worst: Kyle Massenburg to 46235 (12 mi), quoted 45 min, arrived at 90.</span></div><div class="flag good"><span class="flag-dot"></span><span>Acceptance 100%. Every offer taken, nothing expired.</span></div><div class="flag note"><span class="flag-dot"></span><span>17 out-of-territory jobs in the 45-day window, shown in the ledger and the not-scored panel, excluded from every score.</span></div><div class="flag note"><span class="flag-dot"></span><span>Data covers Oct 8, 2024 to Sep 12, 2026. The account was on insurance hold Jul 27 to Sep 4.</span></div></div>
+<section><h2>30-day scorecard vs Agero targets <small>60 offers · All</small></h2><div class="meters">
   <div class="meter good"><div class="meter-head"><span class="meter-label">Acceptance</span><span>target ≥90% (assumed)</span></div>
       <div class="meter-val">100%</div><div class="meter-bar"><div class="meter-fill" style="width:100%"></div><div class="meter-tick" style="left:90%"></div></div>
-      <div class="meter-sub">49 of 49 offers taken</div></div>
+      <div class="meter-sub">60 of 60 offers taken</div></div>
   <div class="meter good"><div class="meter-head"><span class="meter-label">NPS</span><span>target ≥85</span></div>
-      <div class="meter-val">95</div><div class="meter-bar"><div class="meter-fill" style="width:95%"></div><div class="meter-tick" style="left:85%"></div></div>
-      <div class="meter-sub">22 responses · 21 promoter, 1 neutral, 0 detractor</div></div>
+      <div class="meter-val">96</div><div class="meter-bar"><div class="meter-fill" style="width:96%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-sub">28 responses · 27 promoter, 1 neutral, 0 detractor</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">ETA accuracy</span><span>target ≥85%</span></div>
-      <div class="meter-val">60.7%</div><div class="meter-bar"><div class="meter-fill" style="width:60.7%"></div><div class="meter-tick" style="left:85%"></div></div>
-      <div class="meter-sub">11 of 28 arrivals past quoted ETA</div><div class="meter-note">Not in selection yet; Agero says it is coming</div></div>
+      <div class="meter-val">63.9%</div><div class="meter-bar"><div class="meter-fill" style="width:63.9%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-sub">13 of 36 arrivals past quoted ETA</div><div class="meter-note">Not in selection yet; Agero says it is coming</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">Location sharing</span><span>target ≥85%</span></div>
-      <div class="meter-val">6.1%</div><div class="meter-bar"><div class="meter-fill" style="width:6.1%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-val">5%</div><div class="meter-bar"><div class="meter-fill" style="width:5.0%"></div><div class="meter-tick" style="left:85%"></div></div>
       <div class="meter-sub">assigned driver's phone sharing before the offer and on every status</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">Photo quality</span><span>target ≥85%</span></div>
-      <div class="meter-val">13.9%</div><div class="meter-bar"><div class="meter-fill" style="width:13.9%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-val">34%</div><div class="meter-bar"><div class="meter-fill" style="width:34.0%"></div><div class="meter-tick" style="left:85%"></div></div>
       <div class="meter-sub">completed jobs passing Agero's photo check</div></div>
 </div></section>
-<section><h2>45-day completion <small>Agero's completion window · 47 scorable · All</small></h2><div class="meters">
+<section><h2>45-day completion <small>Agero's completion window · 55 scorable · All</small></h2><div class="meters">
   <div class="meter warn"><div class="meter-head"><span class="meter-label">Completion</span><span>target ≥90%</span></div>
-      <div class="meter-val">83%</div><div class="meter-bar"><div class="meter-fill" style="width:83.0%"></div><div class="meter-tick" style="left:90%"></div></div>
-      <div class="meter-sub">39 completed of 47 scorable · 6 customer cancel excluded</div></div>
+      <div class="meter-val">85.5%</div><div class="meter-bar"><div class="meter-fill" style="width:85.5%"></div><div class="meter-tick" style="left:90%"></div></div>
+      <div class="meter-sub">47 completed of 55 scorable · 5 customer cancel excluded</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">GOA</span><span>no Agero target</span></div><div class="meter-val">4</div>
-    <div class="meter-bar"><div class="meter-fill" style="width:8.5%"></div></div>
-    <div class="meter-sub">8.5% of scorable · plus 3 reassigned and 1 unsuccessful, which count the same way</div></div>
-  <div class="meter good"><div class="meter-head"><span class="meter-label">45-job ramp</span><span>needs 45 in 45 days</span></div><div class="meter-val">53<span style="font-size:20px;color:var(--muted)"> / 45</span></div>
+    <div class="meter-bar"><div class="meter-fill" style="width:7.3%"></div></div>
+    <div class="meter-sub">7.3% of scorable · plus 3 reassigned and 1 unsuccessful, which count the same way</div></div>
+  <div class="meter good"><div class="meter-head"><span class="meter-label">45-job ramp</span><span>needs 45 in 45 days</span></div><div class="meter-val">60<span style="font-size:20px;color:var(--muted)"> / 45</span></div>
     <div class="meter-bar"><div class="meter-fill" style="width:100%"></div><div class="meter-tick" style="left:100%"></div></div>
     <div class="meter-sub">Real stats now drive routing.</div></div>
-  <div class="meter"><div class="meter-head"><span class="meter-label">Avg run</span><span>en-route miles</span></div><div class="meter-val">16</div>
-    <div class="meter-bar"><div class="meter-fill" style="width:31.0%"></div></div>
-    <div class="meter-sub">longest 50 mi · jobs over 30 mi are marked in the ledger</div></div>
+  <div class="meter"><div class="meter-head"><span class="meter-label">Avg run</span><span>en-route miles</span></div><div class="meter-val">14</div>
+    <div class="meter-bar"><div class="meter-fill" style="width:27.4%"></div></div>
+    <div class="meter-sub">longest 47 mi · jobs over 30 mi are marked in the ledger</div></div>
 </div></section>
 <section><h2>Path to target <small>All · tap the counters to see what today would do</small></h2><div class="calc">
   <div class="panel"><div class="meter-head"><span class="meter-label">Completion · 45-day</span><span>target ≥90%</span></div>
-    <div class="need">Now 39 of 47. Needs <b>34</b> straight completions with zero GOA to clear 90%.</div>
+    <div class="need">Now 47 of 55. Needs <b>26</b> straight completions with zero GOA to clear 90%.</div>
     <div class="calc-row"><span>Completed today</span><div class="stepper"><button data-c="c" data-d="-1" aria-label="fewer completed">−</button><b data-cnt="c">0</b><button data-c="c" data-d="1" aria-label="more completed">+</button></div></div>
     <div class="calc-row"><span>GOA today</span><div class="stepper"><button data-c="g" data-d="-1" aria-label="fewer GOA">−</button><b data-cnt="g">0</b><button data-c="g" data-d="1" aria-label="more GOA">+</button></div></div>
-    <div class="proj"><span class="calc-val" data-p="c">83%</span><span class="dim" data-p="c-sub"></span></div></div>
+    <div class="proj"><span class="calc-val" data-p="c">85.5%</span><span class="dim" data-p="c-sub"></span></div></div>
   <div class="panel"><div class="meter-head"><span class="meter-label">NPS · 30-day</span><span>target ≥85</span></div>
-    <div class="need">Now 95 on 22 surveys. Needs <b>0</b> more promoters (9 or 10) with no detractors to clear 85. One detractor on this base costs 8 points.</div>
+    <div class="need">Now 96 on 28 surveys. Needs <b>0</b> more promoters (9 or 10) with no detractors to clear 85. One detractor on this base costs 7 points.</div>
     <div class="calc-row"><span>Promoters (9–10) today</span><div class="stepper"><button data-c="p" data-d="-1" aria-label="fewer promoters">−</button><b data-cnt="p">0</b><button data-c="p" data-d="1" aria-label="more promoters">+</button></div></div>
     <div class="calc-row"><span>Neutrals (7–8) today</span><div class="stepper"><button data-c="n" data-d="-1" aria-label="fewer neutrals">−</button><b data-cnt="n">0</b><button data-c="n" data-d="1" aria-label="more neutrals">+</button></div></div>
     <div class="calc-row"><span>Detractors (0–6) today</span><div class="stepper"><button data-c="d" data-d="-1" aria-label="fewer detractors">−</button><b data-cnt="d">0</b><button data-c="d" data-d="1" aria-label="more detractors">+</button></div></div>
-    <div class="proj"><span class="calc-val" data-p="n">95</span><span class="dim" data-p="n-sub"></span></div></div>
-</div></section></div><div data-base="Indy Main" hidden><div class="flags"><div class="flag bad"><span class="flag-dot"></span><span>1 GOA on 22 scorable jobs in the 45-day window. Completion 81.8% against Agero's 90% line. Gap = 1 GOA + 3 reassigned + 0 unsuccessful.</span></div><div class="flag bad"><span class="flag-dot"></span><span>3 reassigns in the 45-day window: jobs we accepted and then cancelled. Agero counts a reassign against completion AND acceptance, goal under 1%, and provider cancels are not billable. Only accept what we can run; if it must go back, tell Agero inside 15 minutes.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Location sharing 0% vs 85%. Per Agero (Sheila, Sep 9) this is a proximity bonus, not a penalty: when a driver is closer than the shop, Agero uses the driver's location in selection. Post-dispatch sharing is fine (88%); the gap is PRE-dispatch, so drivers keep the DA app sharing all shift. 2 of 26 jobs were on the owner login.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Photo quality 17.6% vs 85%. Drop-off photos were uploaded; Agero also wants four pickup corners, VIN, plate and pre-existing damage.</span></div><div class="flag warn"><span class="flag-dot"></span><span>8 of 14 arrivals past the quoted ETA. Worst: Donovanduncan to 46205 (3 mi), quoted 45 min, arrived at 76.</span></div><div class="flag good"><span class="flag-dot"></span><span>Acceptance 100%. Every offer taken, nothing expired.</span></div><div class="flag note"><span class="flag-dot"></span><span>12 out-of-territory jobs in the 45-day window, shown in the ledger and the not-scored panel, excluded from every score.</span></div><div class="flag note"><span class="flag-dot"></span><span>Data covers Oct 8, 2024 to Sep 11, 2026. The account was on insurance hold Jul 27 to Sep 4.</span></div></div>
-<section><h2>30-day scorecard vs Agero targets <small>26 offers · Indy Main</small></h2><div class="meters">
+    <div class="proj"><span class="calc-val" data-p="n">96</span><span class="dim" data-p="n-sub"></span></div></div>
+</div></section></div><div data-base="Indy Main" hidden><div class="flags"><div class="flag bad"><span class="flag-dot"></span><span>1 GOA on 30 scorable jobs in the 45-day window. Completion 86.7% against Agero's 90% line. Gap = 1 GOA + 3 reassigned + 0 unsuccessful.</span></div><div class="flag bad"><span class="flag-dot"></span><span>3 reassigns in the 45-day window: jobs we accepted and then cancelled. Agero counts a reassign against completion AND acceptance, goal under 1%, and provider cancels are not billable. Only accept what we can run; if it must go back, tell Agero inside 15 minutes.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Location sharing 0% vs 85%. Per Agero (Sheila, Sep 9) this is a proximity bonus, not a penalty: when a driver is closer than the shop, Agero uses the driver's location in selection. Post-dispatch sharing is fine (88%); the gap is PRE-dispatch, so drivers keep the DA app sharing all shift. 3 of 35 jobs were on the owner login.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Photo quality 46.2% vs 85%. Drop-off photos were uploaded; Agero also wants four pickup corners, VIN, plate and pre-existing damage.</span></div><div class="flag warn"><span class="flag-dot"></span><span>10 of 21 arrivals past the quoted ETA. Worst: Kyle Massenburg to 46235 (12 mi), quoted 45 min, arrived at 90.</span></div><div class="flag good"><span class="flag-dot"></span><span>Acceptance 100%. Every offer taken, nothing expired.</span></div><div class="flag note"><span class="flag-dot"></span><span>10 out-of-territory jobs in the 45-day window, shown in the ledger and the not-scored panel, excluded from every score.</span></div><div class="flag note"><span class="flag-dot"></span><span>Data covers Oct 8, 2024 to Sep 12, 2026. The account was on insurance hold Jul 27 to Sep 4.</span></div></div>
+<section><h2>30-day scorecard vs Agero targets <small>35 offers · Indy Main</small></h2><div class="meters">
   <div class="meter good"><div class="meter-head"><span class="meter-label">Acceptance</span><span>target ≥90% (assumed)</span></div>
       <div class="meter-val">100%</div><div class="meter-bar"><div class="meter-fill" style="width:100%"></div><div class="meter-tick" style="left:90%"></div></div>
-      <div class="meter-sub">26 of 26 offers taken</div></div>
+      <div class="meter-sub">35 of 35 offers taken</div></div>
   <div class="meter good"><div class="meter-head"><span class="meter-label">NPS</span><span>target ≥85</span></div>
       <div class="meter-val">100</div><div class="meter-bar"><div class="meter-fill" style="width:100%"></div><div class="meter-tick" style="left:85%"></div></div>
-      <div class="meter-sub">9 responses · 9 promoter, 0 neutral, 0 detractor</div></div>
+      <div class="meter-sub">14 responses · 14 promoter, 0 neutral, 0 detractor</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">ETA accuracy</span><span>target ≥85%</span></div>
-      <div class="meter-val">42.9%</div><div class="meter-bar"><div class="meter-fill" style="width:42.9%"></div><div class="meter-tick" style="left:85%"></div></div>
-      <div class="meter-sub">8 of 14 arrivals past quoted ETA</div><div class="meter-note">Not in selection yet; Agero says it is coming</div></div>
+      <div class="meter-val">52.4%</div><div class="meter-bar"><div class="meter-fill" style="width:52.4%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-sub">10 of 21 arrivals past quoted ETA</div><div class="meter-note">Not in selection yet; Agero says it is coming</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">Location sharing</span><span>target ≥85%</span></div>
       <div class="meter-val">0%</div><div class="meter-bar"><div class="meter-fill" style="width:0%"></div><div class="meter-tick" style="left:85%"></div></div>
       <div class="meter-sub">assigned driver's phone sharing before the offer and on every status</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">Photo quality</span><span>target ≥85%</span></div>
-      <div class="meter-val">17.6%</div><div class="meter-bar"><div class="meter-fill" style="width:17.6%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-val">46.2%</div><div class="meter-bar"><div class="meter-fill" style="width:46.2%"></div><div class="meter-tick" style="left:85%"></div></div>
       <div class="meter-sub">completed jobs passing Agero's photo check</div></div>
 </div></section>
-<section><h2>45-day completion <small>Agero's completion window · 22 scorable · Indy Main</small></h2><div class="meters">
+<section><h2>45-day completion <small>Agero's completion window · 30 scorable · Indy Main</small></h2><div class="meters">
   <div class="meter warn"><div class="meter-head"><span class="meter-label">Completion</span><span>target ≥90%</span></div>
-      <div class="meter-val">81.8%</div><div class="meter-bar"><div class="meter-fill" style="width:81.8%"></div><div class="meter-tick" style="left:90%"></div></div>
-      <div class="meter-sub">18 completed of 22 scorable · 5 customer cancel excluded</div></div>
+      <div class="meter-val">86.7%</div><div class="meter-bar"><div class="meter-fill" style="width:86.7%"></div><div class="meter-tick" style="left:90%"></div></div>
+      <div class="meter-sub">26 completed of 30 scorable · 5 customer cancel excluded</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">GOA</span><span>no Agero target</span></div><div class="meter-val">1</div>
-    <div class="meter-bar"><div class="meter-fill" style="width:4.5%"></div></div>
-    <div class="meter-sub">4.5% of scorable · plus 3 reassigned and 0 unsuccessful, which count the same way</div></div>
-  <div class="meter warn"><div class="meter-head"><span class="meter-label">45-job ramp</span><span>needs 45 in 45 days</span></div><div class="meter-val">27<span style="font-size:20px;color:var(--muted)"> / 45</span></div>
-    <div class="meter-bar"><div class="meter-fill" style="width:60%"></div><div class="meter-tick" style="left:100%"></div></div>
-    <div class="meter-sub">Until 45 accepted jobs land in a 45-day window Agero rates you at a placeholder (about 76%) so one bad survey can't sink you. 18 to go, then real stats take over.</div></div>
+    <div class="meter-bar"><div class="meter-fill" style="width:3.3%"></div></div>
+    <div class="meter-sub">3.3% of scorable · plus 3 reassigned and 0 unsuccessful, which count the same way</div></div>
+  <div class="meter warn"><div class="meter-head"><span class="meter-label">45-job ramp</span><span>needs 45 in 45 days</span></div><div class="meter-val">35<span style="font-size:20px;color:var(--muted)"> / 45</span></div>
+    <div class="meter-bar"><div class="meter-fill" style="width:78%"></div><div class="meter-tick" style="left:100%"></div></div>
+    <div class="meter-sub">Until 45 accepted jobs land in a 45-day window Agero rates you at a placeholder (about 76%) so one bad survey can't sink you. 10 to go, then real stats take over.</div></div>
   <div class="meter"><div class="meter-head"><span class="meter-label">Avg run</span><span>en-route miles</span></div><div class="meter-val">10</div>
     <div class="meter-bar"><div class="meter-fill" style="width:19.0%"></div></div>
     <div class="meter-sub">longest 16 mi · jobs over 30 mi are marked in the ledger</div></div>
 </div></section>
 <section><h2>Path to target <small>Indy Main · tap the counters to see what today would do</small></h2><div class="calc">
   <div class="panel"><div class="meter-head"><span class="meter-label">Completion · 45-day</span><span>target ≥90%</span></div>
-    <div class="need">Now 18 of 22. Needs <b>19</b> straight completions with zero GOA to clear 90%.</div>
+    <div class="need">Now 26 of 30. Needs <b>11</b> straight completions with zero GOA to clear 90%.</div>
     <div class="calc-row"><span>Completed today</span><div class="stepper"><button data-c="c" data-d="-1" aria-label="fewer completed">−</button><b data-cnt="c">0</b><button data-c="c" data-d="1" aria-label="more completed">+</button></div></div>
     <div class="calc-row"><span>GOA today</span><div class="stepper"><button data-c="g" data-d="-1" aria-label="fewer GOA">−</button><b data-cnt="g">0</b><button data-c="g" data-d="1" aria-label="more GOA">+</button></div></div>
-    <div class="proj"><span class="calc-val" data-p="c">81.8%</span><span class="dim" data-p="c-sub"></span></div></div>
+    <div class="proj"><span class="calc-val" data-p="c">86.7%</span><span class="dim" data-p="c-sub"></span></div></div>
   <div class="panel"><div class="meter-head"><span class="meter-label">NPS · 30-day</span><span>target ≥85</span></div>
-    <div class="need">Now 100 on 9 surveys. Needs <b>0</b> more promoters (9 or 10) with no detractors to clear 85. One detractor on this base costs 20 points.</div>
+    <div class="need">Now 100 on 14 surveys. Needs <b>0</b> more promoters (9 or 10) with no detractors to clear 85. One detractor on this base costs 13 points.</div>
     <div class="calc-row"><span>Promoters (9–10) today</span><div class="stepper"><button data-c="p" data-d="-1" aria-label="fewer promoters">−</button><b data-cnt="p">0</b><button data-c="p" data-d="1" aria-label="more promoters">+</button></div></div>
     <div class="calc-row"><span>Neutrals (7–8) today</span><div class="stepper"><button data-c="n" data-d="-1" aria-label="fewer neutrals">−</button><b data-cnt="n">0</b><button data-c="n" data-d="1" aria-label="more neutrals">+</button></div></div>
     <div class="calc-row"><span>Detractors (0–6) today</span><div class="stepper"><button data-c="d" data-d="-1" aria-label="fewer detractors">−</button><b data-cnt="d">0</b><button data-c="d" data-d="1" aria-label="more detractors">+</button></div></div>
     <div class="proj"><span class="calc-val" data-p="n">100</span><span class="dim" data-p="n-sub"></span></div></div>
-</div></section></div><div data-base="South Indy" hidden><div class="flags"><div class="flag bad"><span class="flag-dot"></span><span>3 GOA on 25 scorable jobs in the 45-day window. Completion 84% against Agero's 90% line. Gap = 3 GOA + 0 reassigned + 1 unsuccessful.</span></div><div class="flag warn"><span class="flag-dot"></span><span>1 unsuccessful job in the 45-day window (counts against completion per Agero).</span></div><div class="flag warn"><span class="flag-dot"></span><span>Location sharing 13% vs 85%. Per Agero (Sheila, Sep 9) this is a proximity bonus, not a penalty: when a driver is closer than the shop, Agero uses the driver's location in selection. Post-dispatch sharing is fine (88%); the gap is PRE-dispatch, so drivers keep the DA app sharing all shift. 3 of 23 jobs were on the owner login.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Photo quality 10.5% vs 85%. Drop-off photos were uploaded; Agero also wants four pickup corners, VIN, plate and pre-existing damage.</span></div><div class="flag warn"><span class="flag-dot"></span><span>3 of 14 arrivals past the quoted ETA. Worst: Steve Fites to 46151 (32 mi), quoted 90 min, arrived at 127.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Average en-route run 21 miles, longest 47. Long runs are where the ETA misses live.</span></div><div class="flag good"><span class="flag-dot"></span><span>Acceptance 100%. Every offer taken, nothing expired.</span></div><div class="flag note"><span class="flag-dot"></span><span>6 out-of-territory jobs in the 45-day window, shown in the ledger and the not-scored panel, excluded from every score.</span></div><div class="flag note"><span class="flag-dot"></span><span>Data covers Oct 8, 2024 to Sep 11, 2026. The account was on insurance hold Jul 27 to Sep 4.</span></div></div>
-<section><h2>30-day scorecard vs Agero targets <small>23 offers · South Indy</small></h2><div class="meters">
+</div></section></div><div data-base="South Indy" hidden><div class="flags"><div class="flag bad"><span class="flag-dot"></span><span>3 GOA on 25 scorable jobs in the 45-day window. Completion 84% against Agero's 90% line. Gap = 3 GOA + 0 reassigned + 1 unsuccessful.</span></div><div class="flag warn"><span class="flag-dot"></span><span>1 unsuccessful job in the 45-day window (counts against completion per Agero).</span></div><div class="flag warn"><span class="flag-dot"></span><span>Location sharing 12% vs 85%. Per Agero (Sheila, Sep 9) this is a proximity bonus, not a penalty: when a driver is closer than the shop, Agero uses the driver's location in selection. Post-dispatch sharing is fine (88%); the gap is PRE-dispatch, so drivers keep the DA app sharing all shift. 3 of 25 jobs were on the owner login.</span></div><div class="flag warn"><span class="flag-dot"></span><span>Photo quality 19% vs 85%. Drop-off photos were uploaded; Agero also wants four pickup corners, VIN, plate and pre-existing damage.</span></div><div class="flag warn"><span class="flag-dot"></span><span>3 of 15 arrivals past the quoted ETA. Worst: Steve Fites to 46151 (32 mi), quoted 90 min, arrived at 127.</span></div><div class="flag good"><span class="flag-dot"></span><span>Acceptance 100%. Every offer taken, nothing expired.</span></div><div class="flag note"><span class="flag-dot"></span><span>7 out-of-territory jobs in the 45-day window, shown in the ledger and the not-scored panel, excluded from every score.</span></div><div class="flag note"><span class="flag-dot"></span><span>Data covers Oct 8, 2024 to Sep 12, 2026. The account was on insurance hold Jul 27 to Sep 4.</span></div></div>
+<section><h2>30-day scorecard vs Agero targets <small>25 offers · South Indy</small></h2><div class="meters">
   <div class="meter good"><div class="meter-head"><span class="meter-label">Acceptance</span><span>target ≥90% (assumed)</span></div>
       <div class="meter-val">100%</div><div class="meter-bar"><div class="meter-fill" style="width:100%"></div><div class="meter-tick" style="left:90%"></div></div>
-      <div class="meter-sub">23 of 23 offers taken</div></div>
+      <div class="meter-sub">25 of 25 offers taken</div></div>
   <div class="meter good"><div class="meter-head"><span class="meter-label">NPS</span><span>target ≥85</span></div>
-      <div class="meter-val">92</div><div class="meter-bar"><div class="meter-fill" style="width:92%"></div><div class="meter-tick" style="left:85%"></div></div>
-      <div class="meter-sub">13 responses · 12 promoter, 1 neutral, 0 detractor</div></div>
+      <div class="meter-val">93</div><div class="meter-bar"><div class="meter-fill" style="width:93%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-sub">14 responses · 13 promoter, 1 neutral, 0 detractor</div></div>
   <div class="meter warn"><div class="meter-head"><span class="meter-label">ETA accuracy</span><span>target ≥85%</span></div>
-      <div class="meter-val">78.6%</div><div class="meter-bar"><div class="meter-fill" style="width:78.6%"></div><div class="meter-tick" style="left:85%"></div></div>
-      <div class="meter-sub">3 of 14 arrivals past quoted ETA</div><div class="meter-note">Not in selection yet; Agero says it is coming</div></div>
+      <div class="meter-val">80%</div><div class="meter-bar"><div class="meter-fill" style="width:80.0%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-sub">3 of 15 arrivals past quoted ETA</div><div class="meter-note">Not in selection yet; Agero says it is coming</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">Location sharing</span><span>target ≥85%</span></div>
-      <div class="meter-val">13%</div><div class="meter-bar"><div class="meter-fill" style="width:13.0%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-val">12%</div><div class="meter-bar"><div class="meter-fill" style="width:12.0%"></div><div class="meter-tick" style="left:85%"></div></div>
       <div class="meter-sub">assigned driver's phone sharing before the offer and on every status</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">Photo quality</span><span>target ≥85%</span></div>
-      <div class="meter-val">10.5%</div><div class="meter-bar"><div class="meter-fill" style="width:10.5%"></div><div class="meter-tick" style="left:85%"></div></div>
+      <div class="meter-val">19%</div><div class="meter-bar"><div class="meter-fill" style="width:19.0%"></div><div class="meter-tick" style="left:85%"></div></div>
       <div class="meter-sub">completed jobs passing Agero's photo check</div></div>
 </div></section>
 <section><h2>45-day completion <small>Agero's completion window · 25 scorable · South Indy</small></h2><div class="meters">
   <div class="meter warn"><div class="meter-head"><span class="meter-label">Completion</span><span>target ≥90%</span></div>
       <div class="meter-val">84%</div><div class="meter-bar"><div class="meter-fill" style="width:84.0%"></div><div class="meter-tick" style="left:90%"></div></div>
-      <div class="meter-sub">21 completed of 25 scorable · 1 customer cancel excluded</div></div>
+      <div class="meter-sub">21 completed of 25 scorable · 0 customer cancel excluded</div></div>
   <div class="meter bad"><div class="meter-head"><span class="meter-label">GOA</span><span>no Agero target</span></div><div class="meter-val">3</div>
     <div class="meter-bar"><div class="meter-fill" style="width:12.0%"></div></div>
     <div class="meter-sub">12% of scorable · plus 0 reassigned and 1 unsuccessful, which count the same way</div></div>
-  <div class="meter warn"><div class="meter-head"><span class="meter-label">45-job ramp</span><span>needs 45 in 45 days</span></div><div class="meter-val">26<span style="font-size:20px;color:var(--muted)"> / 45</span></div>
-    <div class="meter-bar"><div class="meter-fill" style="width:58%"></div><div class="meter-tick" style="left:100%"></div></div>
-    <div class="meter-sub">Until 45 accepted jobs land in a 45-day window Agero rates you at a placeholder (about 76%) so one bad survey can't sink you. 19 to go, then real stats take over.</div></div>
-  <div class="meter"><div class="meter-head"><span class="meter-label">Avg run</span><span>en-route miles</span></div><div class="meter-val">22</div>
-    <div class="meter-bar"><div class="meter-fill" style="width:43.4%"></div></div>
-    <div class="meter-sub">longest 50 mi · jobs over 30 mi are marked in the ledger</div></div>
+  <div class="meter warn"><div class="meter-head"><span class="meter-label">45-job ramp</span><span>needs 45 in 45 days</span></div><div class="meter-val">25<span style="font-size:20px;color:var(--muted)"> / 45</span></div>
+    <div class="meter-bar"><div class="meter-fill" style="width:56%"></div><div class="meter-tick" style="left:100%"></div></div>
+    <div class="meter-sub">Until 45 accepted jobs land in a 45-day window Agero rates you at a placeholder (about 76%) so one bad survey can't sink you. 20 to go, then real stats take over.</div></div>
+  <div class="meter"><div class="meter-head"><span class="meter-label">Avg run</span><span>en-route miles</span></div><div class="meter-val">20</div>
+    <div class="meter-bar"><div class="meter-fill" style="width:39.4%"></div></div>
+    <div class="meter-sub">longest 47 mi · jobs over 30 mi are marked in the ledger</div></div>
 </div></section>
 <section><h2>Path to target <small>South Indy · tap the counters to see what today would do</small></h2><div class="calc">
   <div class="panel"><div class="meter-head"><span class="meter-label">Completion · 45-day</span><span>target ≥90%</span></div>
@@ -215,18 +215,90 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
     <div class="calc-row"><span>GOA today</span><div class="stepper"><button data-c="g" data-d="-1" aria-label="fewer GOA">−</button><b data-cnt="g">0</b><button data-c="g" data-d="1" aria-label="more GOA">+</button></div></div>
     <div class="proj"><span class="calc-val" data-p="c">84%</span><span class="dim" data-p="c-sub"></span></div></div>
   <div class="panel"><div class="meter-head"><span class="meter-label">NPS · 30-day</span><span>target ≥85</span></div>
-    <div class="need">Now 92 on 13 surveys. Needs <b>0</b> more promoters (9 or 10) with no detractors to clear 85. One detractor on this base costs 14 points.</div>
+    <div class="need">Now 93 on 14 surveys. Needs <b>0</b> more promoters (9 or 10) with no detractors to clear 85. One detractor on this base costs 13 points.</div>
     <div class="calc-row"><span>Promoters (9–10) today</span><div class="stepper"><button data-c="p" data-d="-1" aria-label="fewer promoters">−</button><b data-cnt="p">0</b><button data-c="p" data-d="1" aria-label="more promoters">+</button></div></div>
     <div class="calc-row"><span>Neutrals (7–8) today</span><div class="stepper"><button data-c="n" data-d="-1" aria-label="fewer neutrals">−</button><b data-cnt="n">0</b><button data-c="n" data-d="1" aria-label="more neutrals">+</button></div></div>
     <div class="calc-row"><span>Detractors (0–6) today</span><div class="stepper"><button data-c="d" data-d="-1" aria-label="fewer detractors">−</button><b data-cnt="d">0</b><button data-c="d" data-d="1" aria-label="more detractors">+</button></div></div>
-    <div class="proj"><span class="calc-val" data-p="n">92</span><span class="dim" data-p="n-sub"></span></div></div>
+    <div class="proj"><span class="calc-val" data-p="n">93</span><span class="dim" data-p="n-sub"></span></div></div>
 </div></section></div>
 
 <section>
   <h2>Every job <small id="ledger-scope"></small></h2>
   <div class="tablewrap"><table id="ledger">
     <thead><tr><th>Time</th><th>Base</th><th>Service · vehicle</th><th>Zip</th><th>Miles</th><th>Driver</th><th>Outcome</th><th>ETA → ATA (min)</th><th>NPS</th><th>Loc · Photo</th><th class="right">Revenue</th><th>Job ID</th></tr></thead>
-    <tbody><tr data-day="2026-09-11" data-base="Indy Main">
+    <tbody><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 5:55 PM<span class="dim"> Evening</span></td>
+      <td>Indy Main</td><td>Lockout<span class="dim"> 2021 Honda Civic</span></td>
+      <td class="mono">46032</td><td class="mono ">8</td><td>Robertoramos</td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">45 → 32</td>
+      <td class="mono">—</td><td class="mono">○ ●</td>
+      <td class="mono right">$23.00</td><td class="mono dim">114199660</td></tr><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 5:17 PM<span class="dim"> Evening</span></td>
+      <td>Indy Main</td><td>Lockout<span class="dim"> 2018 Mazda CX-5 4D SPT</span></td>
+      <td class="mono">46235</td><td class="mono ">12</td><td>Kyle Massenburg</td>
+      <td><span class="pill good">Completed</span></td><td class="mono over">45 → 90</td>
+      <td class="mono">10</td><td class="mono">○ ●</td>
+      <td class="mono right">$25.40</td><td class="mono dim">114197950</td></tr><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 5:12 PM<span class="dim"> Evening</span></td>
+      <td>Indy Main</td><td>Jump<span class="dim"> 2013 HONDA CIVIC 4D LX</span></td>
+      <td class="mono">46062</td><td class="mono ">16</td><td>Walterwhite</td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">60 → 45</td>
+      <td class="mono">—</td><td class="mono">○ ●</td>
+      <td class="mono right">$32.15</td><td class="mono dim">114197720</td></tr><tr data-day="2026-09-12" data-base="South Indy">
+      <td class="mono">Sep 12 5:08 PM<span class="dim"> Evening</span></td>
+      <td>South Indy</td><td>Fuel<span class="dim"> 1999 CHEV SILVERADO C1500</span></td>
+      <td class="mono">46239</td><td class="mono ">14</td><td>Steve Fites</td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">60 → n/a</td>
+      <td class="mono">—</td><td class="mono">○ ●</td>
+      <td class="mono right">$49.40</td><td class="mono dim">114197529</td></tr><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 4:00 PM<span class="dim"> Evening</span></td>
+      <td>Indy Main</td><td>Lockout<span class="dim"> 2016 Toyota Corolla</span></td>
+      <td class="mono">46038</td><td class="mono ">11</td><td>Robertsmith</td>
+      <td><span class="pill good">Completed</span></td><td class="mono over">60 → 65</td>
+      <td class="mono">10</td><td class="mono">○ ●</td>
+      <td class="mono right">$24.50</td><td class="mono dim">114194339</td></tr><tr data-day="2026-09-12" data-base="South Indy">
+      <td class="mono">Sep 12 2:04 PM<span class="dim"> Evening</span></td>
+      <td>South Indy</td><td>Tire<span class="dim"> 2017 Dodge Caravan</span></td>
+      <td class="mono">46237</td><td class="mono ">5</td><td>Santose</td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">45 → 23</td>
+      <td class="mono">10</td><td class="mono">○ ●</td>
+      <td class="mono right">$22.00</td><td class="mono dim">114188379</td></tr><tr data-day="2026-09-12" data-base="">
+      <td class="mono">Sep 12 1:04 PM<span class="dim"> Day</span></td>
+      <td>South Indy <span class="tag notscored">out of territory · not scored</span></td><td>Lockout<span class="dim"> 2014 Dodge Grand Caravan</span></td>
+      <td class="mono">47274</td><td class="mono over">64</td><td>Ericbrown</td>
+      <td><span class="pill muted">Completed</span></td><td class="mono ">90 → 64</td>
+      <td class="mono">10</td><td class="mono">○ ●</td>
+      <td class="mono right">$103.00</td><td class="mono dim">114185194</td></tr><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 9:51 AM<span class="dim"> Day</span></td>
+      <td>Indy Main</td><td>Tire<span class="dim"> 2023 Mercedes-Benz GLE SUV</span></td>
+      <td class="mono">46254</td><td class="mono ">10</td><td>Santose</td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">60 → 14</td>
+      <td class="mono">—</td><td class="mono">○ ●</td>
+      <td class="mono right">$23.75</td><td class="mono dim">114175950</td></tr><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 7:39 AM<span class="dim"> Day</span></td>
+      <td>Indy Main</td><td>Jump<span class="dim"> 2012 Dodge Journey</span></td>
+      <td class="mono">46205</td><td class="mono ">3</td><td>Ericbrown</td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">60 → 23</td>
+      <td class="mono">10</td><td class="mono">○ ●</td>
+      <td class="mono right">$23.00</td><td class="mono dim">114172297</td></tr><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 7:19 AM<span class="dim"> Day</span></td>
+      <td>Indy Main</td><td>Tire<span class="dim"> 2015 Lexus GX 460</span></td>
+      <td class="mono">46235</td><td class="mono ">10</td><td>Sam Gillespie <span class="tag">owner login</span></td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">60 → n/a</td>
+      <td class="mono">10</td><td class="mono">○ ●</td>
+      <td class="mono right">$23.60</td><td class="mono dim">114172038</td></tr><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 7:16 AM<span class="dim"> Day</span></td>
+      <td>Indy Main</td><td>Tire<span class="dim"> 2020 Hyundai Palisade</span></td>
+      <td class="mono">46202</td><td class="mono ">8</td><td>Michaelberry</td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">60 → n/a</td>
+      <td class="mono">—</td><td class="mono">○ ●</td>
+      <td class="mono right">$23.00</td><td class="mono dim">114172001</td></tr><tr data-day="2026-09-12" data-base="Indy Main">
+      <td class="mono">Sep 12 5:55 AM<span class="dim"> Overnight</span></td>
+      <td>Indy Main</td><td>Jump<span class="dim"> 2015 Kia Sorento</span></td>
+      <td class="mono">46226</td><td class="mono ">7</td><td>Ericbrown</td>
+      <td><span class="pill good">Completed</span></td><td class="mono ">60 → 29</td>
+      <td class="mono">10</td><td class="mono">○ ●</td>
+      <td class="mono right">$23.00</td><td class="mono dim">114171328</td></tr><tr data-day="2026-09-11" data-base="Indy Main">
       <td class="mono">Sep 11 8:57 PM<span class="dim"> Evening</span></td>
       <td>Indy Main</td><td>Tire<span class="dim"> 2025 TOYOTA RAV4</span></td>
       <td class="mono">46220</td><td class="mono ">1</td><td>Trent Radcliff</td>
@@ -622,48 +694,12 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
       <td class="mono">46268</td><td class="mono ">—</td><td>Unassigned</td>
       <td><span class="pill bad">Expired</span></td><td class="mono ">—</td>
       <td class="mono">—</td><td class="mono">○ ○</td>
-      <td class="mono right">$0.00</td><td class="mono dim">offer</td></tr><tr data-day="2026-07-29" data-base="Indy Main">
-      <td class="mono">Jul 29 1:50 PM<span class="dim"> Day</span></td>
-      <td>Indy Main</td><td>Jump<span class="dim"> 2010 Toyota RAV4</span></td>
-      <td class="mono">46062</td><td class="mono ">12</td><td>-522</td>
-      <td><span class="pill good">Completed</span></td><td class="mono ">45 → n/a</td>
-      <td class="mono">10</td><td class="mono">○ ○</td>
-      <td class="mono right">$25.70</td><td class="mono dim">111886880</td></tr><tr data-day="2026-07-29" data-base="South Indy">
-      <td class="mono">Jul 29 8:03 AM<span class="dim"> Day</span></td>
-      <td>South Indy</td><td>Tire<span class="dim"> 2025 Hyundai Tucson</span></td>
-      <td class="mono">47201</td><td class="mono over">50</td><td>-15</td>
-      <td><span class="pill good">Completed</span></td><td class="mono ">60 → n/a</td>
-      <td class="mono">—</td><td class="mono">○ ○</td>
-      <td class="mono right">$82.15</td><td class="mono dim">111866685</td></tr><tr data-day="2026-07-29" data-base="">
-      <td class="mono">Jul 29 6:47 AM<span class="dim"> Day</span></td>
-      <td>Indy Main <span class="tag notscored">out of territory · not scored</span></td><td>Tire<span class="dim"> 2019 Chevrolet Equinox</span></td>
-      <td class="mono">46172</td><td class="mono over">46</td><td>-64</td>
-      <td><span class="pill muted">Completed</span></td><td class="mono over">120 → 139</td>
-      <td class="mono">10</td><td class="mono">○ ○</td>
-      <td class="mono right">$76.25</td><td class="mono dim">111865067</td></tr><tr data-day="2026-07-29" data-base="South Indy">
-      <td class="mono">Jul 29 6:33 AM<span class="dim"> Day</span></td>
-      <td>South Indy</td><td>Tire<span class="dim"> 2007 Nissan Sentra</span></td>
-      <td class="mono">46131</td><td class="mono ">22</td><td>-15</td>
-      <td><span class="pill good">Completed</span></td><td class="mono over">90 → 100</td>
-      <td class="mono">10</td><td class="mono">○ ○</td>
-      <td class="mono right">$40.00</td><td class="mono dim">111864922</td></tr><tr data-day="2026-07-29" data-base="South Indy">
-      <td class="mono">Jul 29 6:19 AM<span class="dim"> Day</span></td>
-      <td>South Indy</td><td>Tire<span class="dim"> 2016 Ford Fusion</span></td>
-      <td class="mono">46184</td><td class="mono ">18</td><td>-711</td>
-      <td><span class="pill muted">Customer cancel</span></td><td class="mono ">90 → n/a</td>
-      <td class="mono">—</td><td class="mono">○ ○</td>
-      <td class="mono right">$0.00</td><td class="mono dim">111864791</td></tr><tr data-day="2026-07-29" data-base="">
-      <td class="mono">Jul 29 5:43 AM<span class="dim"> Overnight</span></td>
-      <td>Indy Main <span class="tag notscored">out of territory · not scored</span></td><td>Tire<span class="dim"> 2009 Honda Accord</span></td>
-      <td class="mono">46923</td><td class="mono over">68</td><td>-451</td>
-      <td><span class="pill muted">Completed</span></td><td class="mono over">90 → 121</td>
-      <td class="mono">—</td><td class="mono">○ ○</td>
-      <td class="mono right">$110.75</td><td class="mono dim">111864540</td></tr></tbody></table></div>
+      <td class="mono right">$0.00</td><td class="mono dim">offer</td></tr></tbody></table></div>
   <div class="legend">Miles = en-route distance; red at 30 or more. Loc · Photo: ● on / ○ off. Red ETA → ATA means arrival after the quoted ETA. Revenue is the Swoop invoice total, not driver pay. "Owner login" marks jobs assigned to Sam's driver account. "Not scored" rows come from Swoop emails and are excluded from every metric.</div>
 </section>
 
 <section class="two">
-  <div class="panel"><h2>Not scored by Agero</h2><ul><li><b>Sep 11 10:59 AM</b> · Tire 2017 Chrysler 200 · 47265 · Sam Gillespie · Completed · NPS 10.0 · $101.20<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 11 10:10 AM</b> · Lockout 2026 freighliner Cascadia · 47448 · Sam Gillespie · Completed · NPS 10.0 · $98.80<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 10 10:24 PM</b> · Tire  · 47362 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 10 8:54 PM</b> · Tire 2020 Ford Transit · 47327 · Unassigned · Reassigned · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 10 11:50 AM</b> · Tire  · 47346 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 9 9:58 PM</b> · Tire  · 47387 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 9 6:13 AM</b> · Tire 2008 Mitsubishi Lancer · 47933 · Andrewmartinek · Completed · NPS 10.0 · $80.90<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 8 5:54 PM</b> · Medium Duty Tire Change  · 45322 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 8 5:52 PM</b> · Lockout 2013 Toyota Prius C Hybrid 5d · 47240 · Deangelojohnson · Completed · NPS — · $94.00<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 8 11:43 AM</b> · Medium Duty Tire Change  · 49021 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 7 9:57 PM</b> · Tire  · 47385 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 7 3:44 PM</b> · Lockout 2017 Subaru Impreza · 47240 · Steve Fites · Completed · NPS — · $102.85<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 6 9:49 PM</b> · Lockout  · 47385 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 6 8:24 PM</b> · Jump  · 47448 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 5 6:21 PM</b> · Medium Duty Tire Change 2009 Ford F-350 · 46069 · Sam Gillespie · Completed · NPS — · $97.73<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 5 2:36 PM</b> · Tire  · 47933 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Jul 29 6:47 AM</b> · Tire 2019 Chevrolet Equinox · 46172 · -64 · Completed · NPS 10.0 · $76.25<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Jul 29 5:43 AM</b> · Tire 2009 Honda Accord · 46923 · -451 · Completed · NPS — · $110.75<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li></ul>
+  <div class="panel"><h2>Not scored by Agero</h2><ul><li><b>Sep 12 1:04 PM</b> · Lockout 2014 Dodge Grand Caravan · 47274 · Ericbrown · Completed · NPS 10.0 · $103.00<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 11 10:59 AM</b> · Tire 2017 Chrysler 200 · 47265 · Sam Gillespie · Completed · NPS 10.0 · $101.20<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 11 10:10 AM</b> · Lockout 2026 freighliner Cascadia · 47448 · Sam Gillespie · Completed · NPS 10.0 · $98.80<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 10 10:24 PM</b> · Tire  · 47362 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 10 8:54 PM</b> · Tire 2020 Ford Transit · 47327 · Unassigned · Reassigned · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 10 11:50 AM</b> · Tire  · 47346 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 9 9:58 PM</b> · Tire  · 47387 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 9 6:13 AM</b> · Tire 2008 Mitsubishi Lancer · 47933 · Andrewmartinek · Completed · NPS 10.0 · $80.90<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 8 5:54 PM</b> · Medium Duty Tire Change  · 45322 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 8 5:52 PM</b> · Lockout 2013 Toyota Prius C Hybrid 5d · 47240 · Deangelojohnson · Completed · NPS — · $94.00<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 8 11:43 AM</b> · Medium Duty Tire Change  · 49021 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 7 9:57 PM</b> · Tire  · 47385 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 7 3:44 PM</b> · Lockout 2017 Subaru Impreza · 47240 · Steve Fites · Completed · NPS — · $102.85<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 6 9:49 PM</b> · Lockout  · 47385 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 6 8:24 PM</b> · Jump  · 47448 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the South Indy agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 5 6:21 PM</b> · Medium Duty Tire Change 2009 Ford F-350 · 46069 · Sam Gillespie · Completed · NPS — · $97.73<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li><li><b>Sep 5 2:36 PM</b> · Tire  · 47933 · Unassigned · Refused · NPS — · $0.00<div class="dim">Out of territory on the Indy Main agreement. Agero excludes it from acceptance and the Performance Summary; it still pays.</div></li></ul>
     <div class="legend">Out-of-territory and second-provider jobs. Agero shows their surveys but only counts NPS when you were the first and only provider.</div></div>
   <div class="panel"><h2>Dispatcher checklist</h2><ul>
     <li><b>The 15-minute rule (Agero, Sep 9).</b> The only outcome that does not count against completion is a customer cancel within 15 minutes of acceptance. GOA counts. Unsuccessful counts, even a dead starter on a jump. So read the notes the moment we accept: if it says "needs a key made," wrong service, or anything we can't finish, call the customer right away and have them cancel with Agero and reorder the right service (locksmith, tow).</li>
@@ -671,7 +707,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
     <li>Before dispatching, call the customer to confirm they are still with the vehicle.</li>
     <li>Assign the job to the driver who is actually rolling, not the owner login. Agero only reads GPS from the assigned driver's phone.</li>
     <li>Quote ETAs from the driver's real position. Runs over 30 miles are where the ETA misses are.</li>
-    <li>Close every job with a callback and tell the customer a one-minute survey is coming. NPS base is 22 responses.</li>
+    <li>Close every job with a callback and tell the customer a one-minute survey is coming. NPS base is 28 responses.</li>
     <li>Never let an offer expire. If you can't take it, reject with a reason inside the window.</li></ul></div>
 </section>
 
@@ -682,47 +718,72 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
     <li><b>Photo quality.</b> Agero's check wants four pickup corners, VIN, plate and pre-existing damage before the drop-off set. Today only drop-off photos reach Swoop.</li>
     <li><b>South Indy reach.</b> The South agreement is pulling Columbus and Martinsville runs at 30 to 42 miles. Every ETA miss so far is one of those. Worth a look at the zip list on that agreement.</li>
     <li><b>GOA vs cancel, resolved.</b> Customer cancel inside 15 minutes is the only free outcome. GOA and Unsuccessful both count. Sheila agrees unsuccessful jumps (bad starter, alternator) are outside our control and has raised it with Agero leadership, but today it counts.</li></ul></div>
-  <div><h2>By driver <small class="scope-label"></small></h2><div class="drivers" data-base="All" data-win="yesterday" hidden><div class="drv"><div class="drv-name">Unassigned</div>
-              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-14 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>7 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
+  <div><h2>By driver <small class="scope-label"></small></h2><div class="drivers" data-base="All" data-win="yesterday" hidden><div class="drv"><div class="drv-name">Ericbrown</div>
               <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+21 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>17 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$80.55</b></div></div><div class="drv"><div class="drv-name">Marcuslynn</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-34 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>5 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$46.00</b></div></div><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-34 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$45.75</b></div></div><div class="drv"><div class="drv-name">Michaelberry</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>15 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$15.00</b></div></div><div class="drv"><div class="drv-name">Quinton Fannin</div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-54 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>35 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$59.80</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.60</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-10 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>0 mi</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+5 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>11 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$24.50</b></div></div><div class="drv"><div class="drv-name">Steve Fites</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>14 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$49.40</b></div></div><div class="drv"><div class="drv-name">Walterwhite</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-15 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$32.15</b></div></div><div class="drv"><div class="drv-name">Kyle Massenburg</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+45 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$25.40</b></div></div><div class="drv"><div class="drv-name">Robertoramos</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-13 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
               <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div></div><div class="drivers" data-base="All" data-win="30" hidden><div class="drv"><div class="drv-name">Unassigned</div>
               <div class="drv-row"><span>Jobs</span><b>8</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-14 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
               <div class="drv-row"><span>Location on</span><b>0/8</b></div><div class="drv-row"><span>Revenue</span><b>$53.00</b></div></div><div class="drv"><div class="drv-name">Steve Fites</div>
-              <div class="drv-row"><span>Jobs</span><b>6</b></div><div class="drv-row"><span>Completed</span><b>6</b></div>
+              <div class="drv-row"><span>Jobs</span><b>7</b></div><div class="drv-row"><span>Completed</span><b>7</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-15 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>26 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>1/6</b></div><div class="drv-row"><span>Revenue</span><b>$277.50</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
-              <div class="drv-row"><span>Jobs</span><b>5</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>Avg run</span><b>24 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>1/7</b></div><div class="drv-row"><span>Revenue</span><b>$326.90</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
+              <div class="drv-row"><span>Jobs</span><b>6</b></div><div class="drv-row"><span>Completed</span><b>3</b></div>
               <div class="drv-row"><span>GOA</span><b class="bad-ink">3</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/5</b></div><div class="drv-row"><span>Revenue</span><b>$112.05</b></div></div><div class="drv"><div class="drv-name">Donovanduncan</div>
+              <div class="drv-row"><span>Avg run</span><b>15 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/6</b></div><div class="drv-row"><span>Revenue</span><b>$135.65</b></div></div><div class="drv"><div class="drv-name">Robertoramos</div>
+              <div class="drv-row"><span>Jobs</span><b>5</b></div><div class="drv-row"><span>Completed</span><b>5</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-5 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/5</b></div><div class="drv-row"><span>Revenue</span><b>$121.30</b></div></div><div class="drv"><div class="drv-name">Donovanduncan</div>
               <div class="drv-row"><span>Jobs</span><b>5</b></div><div class="drv-row"><span>Completed</span><b>5</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+17 min</b></div>
@@ -732,12 +793,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+4 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$117.55</b></div></div><div class="drv"><div class="drv-name">Robertoramos</div>
-              <div class="drv-row"><span>Jobs</span><b>4</b></div><div class="drv-row"><span>Completed</span><b>4</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-3 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$98.30</b></div></div><div class="drv"><div class="drv-name">Deangelojohnson</div>
+              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$117.55</b></div></div><div class="drv"><div class="drv-name">Deangelojohnson</div>
               <div class="drv-row"><span>Jobs</span><b>4</b></div><div class="drv-row"><span>Completed</span><b>4</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-6 min</b></div>
@@ -747,17 +803,37 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+12 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>13 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$95.55</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
+              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$95.55</b></div></div><div class="drv"><div class="drv-name">Ericbrown</div>
+              <div class="drv-row"><span>Jobs</span><b>3</b></div><div class="drv-row"><span>Completed</span><b>3</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-32 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/3</b></div><div class="drv-row"><span>Revenue</span><b>$76.70</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
               <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-22 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>26 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$94.05</b></div></div><div class="drv"><div class="drv-name">Quinton Fannin</div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$94.05</b></div></div><div class="drv"><div class="drv-name">Walterwhite</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-19 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>9 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$54.15</b></div></div><div class="drv"><div class="drv-name">Quinton Fannin</div>
               <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="bad-ink">1</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-18 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>36 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$74.80</b></div></div><div class="drv"><div class="drv-name">Brandonhair</div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$74.80</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-2 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>6 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$47.50</b></div></div><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-34 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$45.75</b></div></div><div class="drv"><div class="drv-name">Brandonhair</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-19 min</b></div>
@@ -767,37 +843,37 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
               <div class="drv-row"><span>Avg run</span><b>22 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$49.70</b></div></div><div class="drv"><div class="drv-name">Walterwhite</div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$49.70</b></div></div><div class="drv"><div class="drv-name">Michaelberry</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-23 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>1 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$22.00</b></div></div><div class="drv"><div class="drv-name">Ericbrown</div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Kyle Massenburg</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-27 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$30.70</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-10 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>0 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div></div><div class="drivers" data-base="All" data-win="45" hidden><div class="drv"><div class="drv-name">Unassigned</div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+45 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$25.40</b></div></div></div><div class="drivers" data-base="All" data-win="45" hidden><div class="drv"><div class="drv-name">Unassigned</div>
               <div class="drv-row"><span>Jobs</span><b>8</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-14 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
               <div class="drv-row"><span>Location on</span><b>0/8</b></div><div class="drv-row"><span>Revenue</span><b>$53.00</b></div></div><div class="drv"><div class="drv-name">Steve Fites</div>
-              <div class="drv-row"><span>Jobs</span><b>6</b></div><div class="drv-row"><span>Completed</span><b>6</b></div>
+              <div class="drv-row"><span>Jobs</span><b>7</b></div><div class="drv-row"><span>Completed</span><b>7</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-15 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>26 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>1/6</b></div><div class="drv-row"><span>Revenue</span><b>$277.50</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
-              <div class="drv-row"><span>Jobs</span><b>5</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>Avg run</span><b>24 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>1/7</b></div><div class="drv-row"><span>Revenue</span><b>$326.90</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
+              <div class="drv-row"><span>Jobs</span><b>6</b></div><div class="drv-row"><span>Completed</span><b>3</b></div>
               <div class="drv-row"><span>GOA</span><b class="bad-ink">3</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/5</b></div><div class="drv-row"><span>Revenue</span><b>$112.05</b></div></div><div class="drv"><div class="drv-name">Donovanduncan</div>
+              <div class="drv-row"><span>Avg run</span><b>15 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/6</b></div><div class="drv-row"><span>Revenue</span><b>$135.65</b></div></div><div class="drv"><div class="drv-name">Robertoramos</div>
+              <div class="drv-row"><span>Jobs</span><b>5</b></div><div class="drv-row"><span>Completed</span><b>5</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-5 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/5</b></div><div class="drv-row"><span>Revenue</span><b>$121.30</b></div></div><div class="drv"><div class="drv-name">Donovanduncan</div>
               <div class="drv-row"><span>Jobs</span><b>5</b></div><div class="drv-row"><span>Completed</span><b>5</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+17 min</b></div>
@@ -807,12 +883,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+4 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$117.55</b></div></div><div class="drv"><div class="drv-name">Robertoramos</div>
-              <div class="drv-row"><span>Jobs</span><b>4</b></div><div class="drv-row"><span>Completed</span><b>4</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-3 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$98.30</b></div></div><div class="drv"><div class="drv-name">Deangelojohnson</div>
+              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$117.55</b></div></div><div class="drv"><div class="drv-name">Deangelojohnson</div>
               <div class="drv-row"><span>Jobs</span><b>4</b></div><div class="drv-row"><span>Completed</span><b>4</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-6 min</b></div>
@@ -822,32 +893,37 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+12 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>13 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$95.55</b></div></div><div class="drv"><div class="drv-name">-15</div>
-              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$95.55</b></div></div><div class="drv"><div class="drv-name">Ericbrown</div>
+              <div class="drv-row"><span>Jobs</span><b>3</b></div><div class="drv-row"><span>Completed</span><b>3</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+10 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>36 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$122.15</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-32 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/3</b></div><div class="drv-row"><span>Revenue</span><b>$76.70</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
               <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-22 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>26 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$94.05</b></div></div><div class="drv"><div class="drv-name">Quinton Fannin</div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$94.05</b></div></div><div class="drv"><div class="drv-name">Walterwhite</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-19 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>9 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$54.15</b></div></div><div class="drv"><div class="drv-name">Quinton Fannin</div>
               <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="bad-ink">1</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-18 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>36 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$74.80</b></div></div><div class="drv"><div class="drv-name">-711</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>0</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$74.80</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>18 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$0.00</b></div></div><div class="drv"><div class="drv-name">-522</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-2 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>6 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$47.50</b></div></div><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$25.70</b></div></div><div class="drv"><div class="drv-name">Brandonhair</div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-34 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$45.75</b></div></div><div class="drv"><div class="drv-name">Brandonhair</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-19 min</b></div>
@@ -857,67 +933,92 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
               <div class="drv-row"><span>Avg run</span><b>22 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$49.70</b></div></div><div class="drv"><div class="drv-name">Walterwhite</div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$49.70</b></div></div><div class="drv"><div class="drv-name">Michaelberry</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-23 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>1 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$22.00</b></div></div><div class="drv"><div class="drv-name">Ericbrown</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-27 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$30.70</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-10 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>0 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div></div><div class="drivers" data-base="Indy Main" data-win="yesterday" hidden><div class="drv"><div class="drv-name">Unassigned</div>
-              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-14 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>7 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Marcuslynn</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>0</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>15 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$15.00</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Kyle Massenburg</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-10 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>0 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+45 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$25.40</b></div></div></div><div class="drivers" data-base="Indy Main" data-win="yesterday" hidden><div class="drv"><div class="drv-name">Ericbrown</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-34 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>5 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$46.00</b></div></div><div class="drv"><div class="drv-name">Michaelberry</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+21 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>1 mi</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.60</b></div></div><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-46 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.75</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+5 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>11 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$24.50</b></div></div><div class="drv"><div class="drv-name">Walterwhite</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-15 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$32.15</b></div></div><div class="drv"><div class="drv-name">Kyle Massenburg</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+45 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$25.40</b></div></div><div class="drv"><div class="drv-name">Robertoramos</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-13 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
               <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div></div><div class="drivers" data-base="Indy Main" data-win="30" hidden><div class="drv"><div class="drv-name">Unassigned</div>
               <div class="drv-row"><span>Jobs</span><b>8</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-14 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
               <div class="drv-row"><span>Location on</span><b>0/8</b></div><div class="drv-row"><span>Revenue</span><b>$53.00</b></div></div><div class="drv"><div class="drv-name">Robertoramos</div>
-              <div class="drv-row"><span>Jobs</span><b>4</b></div><div class="drv-row"><span>Completed</span><b>4</b></div>
+              <div class="drv-row"><span>Jobs</span><b>5</b></div><div class="drv-row"><span>Completed</span><b>5</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-3 min</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-5 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$98.30</b></div></div><div class="drv"><div class="drv-name">Marcuslynn</div>
+              <div class="drv-row"><span>Location on</span><b>0/5</b></div><div class="drv-row"><span>Revenue</span><b>$121.30</b></div></div><div class="drv"><div class="drv-name">Marcuslynn</div>
               <div class="drv-row"><span>Jobs</span><b>4</b></div><div class="drv-row"><span>Completed</span><b>3</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+12 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>13 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$95.55</b></div></div><div class="drv"><div class="drv-name">Donovanduncan</div>
+              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$95.55</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
+              <div class="drv-row"><span>Jobs</span><b>3</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="bad-ink">1</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>6 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/3</b></div><div class="drv-row"><span>Revenue</span><b>$61.60</b></div></div><div class="drv"><div class="drv-name">Donovanduncan</div>
               <div class="drv-row"><span>Jobs</span><b>3</b></div><div class="drv-row"><span>Completed</span><b>3</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+17 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>9 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/3</b></div><div class="drv-row"><span>Revenue</span><b>$77.55</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
-              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="bad-ink">1</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>4 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$38.00</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
+              <div class="drv-row"><span>Location on</span><b>0/3</b></div><div class="drv-row"><span>Revenue</span><b>$77.55</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-2 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>6 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$47.50</b></div></div><div class="drv"><div class="drv-name">Ericbrown</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-34 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>5 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$46.00</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-8 min</b></div>
@@ -932,47 +1033,67 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+29 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>13 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$27.20</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-10 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>0 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$27.20</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+21 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>1 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div></div><div class="drivers" data-base="Indy Main" data-win="45" hidden><div class="drv"><div class="drv-name">Unassigned</div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Michaelberry</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-46 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.75</b></div></div><div class="drv"><div class="drv-name">Walterwhite</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-15 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$32.15</b></div></div><div class="drv"><div class="drv-name">Kyle Massenburg</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+45 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$25.40</b></div></div></div><div class="drivers" data-base="Indy Main" data-win="45" hidden><div class="drv"><div class="drv-name">Unassigned</div>
               <div class="drv-row"><span>Jobs</span><b>8</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-14 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
               <div class="drv-row"><span>Location on</span><b>0/8</b></div><div class="drv-row"><span>Revenue</span><b>$53.00</b></div></div><div class="drv"><div class="drv-name">Robertoramos</div>
-              <div class="drv-row"><span>Jobs</span><b>4</b></div><div class="drv-row"><span>Completed</span><b>4</b></div>
+              <div class="drv-row"><span>Jobs</span><b>5</b></div><div class="drv-row"><span>Completed</span><b>5</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-3 min</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-5 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$98.30</b></div></div><div class="drv"><div class="drv-name">Marcuslynn</div>
+              <div class="drv-row"><span>Location on</span><b>0/5</b></div><div class="drv-row"><span>Revenue</span><b>$121.30</b></div></div><div class="drv"><div class="drv-name">Marcuslynn</div>
               <div class="drv-row"><span>Jobs</span><b>4</b></div><div class="drv-row"><span>Completed</span><b>3</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+12 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>13 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$95.55</b></div></div><div class="drv"><div class="drv-name">Donovanduncan</div>
+              <div class="drv-row"><span>Location on</span><b>0/4</b></div><div class="drv-row"><span>Revenue</span><b>$95.55</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
+              <div class="drv-row"><span>Jobs</span><b>3</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="bad-ink">1</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>6 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/3</b></div><div class="drv-row"><span>Revenue</span><b>$61.60</b></div></div><div class="drv"><div class="drv-name">Donovanduncan</div>
               <div class="drv-row"><span>Jobs</span><b>3</b></div><div class="drv-row"><span>Completed</span><b>3</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+17 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>9 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/3</b></div><div class="drv-row"><span>Revenue</span><b>$77.55</b></div></div><div class="drv"><div class="drv-name">Sam Gillespie</div><div class="drv-tag">owner login: placeholder on some jobs</div>
-              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="bad-ink">1</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>4 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$38.00</b></div></div><div class="drv"><div class="drv-name">-522</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/3</b></div><div class="drv-row"><span>Revenue</span><b>$77.55</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$25.70</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-2 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>6 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$47.50</b></div></div><div class="drv"><div class="drv-name">Ericbrown</div>
+              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-34 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>5 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$46.00</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-8 min</b></div>
@@ -987,32 +1108,47 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+29 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>13 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$27.20</b></div></div><div class="drv"><div class="drv-name">Robertsmith</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-10 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>0 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$27.20</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+21 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>1 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div></div><div class="drivers" data-base="South Indy" data-win="yesterday" hidden><div class="drv"><div class="drv-name">Quinton Fannin</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">-54 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>35 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$59.80</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Michaelberry</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>34 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$57.55</b></div></div></div><div class="drivers" data-base="South Indy" data-win="30" hidden><div class="drv"><div class="drv-name">Steve Fites</div>
-              <div class="drv-row"><span>Jobs</span><b>6</b></div><div class="drv-row"><span>Completed</span><b>6</b></div>
+              <div class="drv-row"><span>Avg run</span><b>8 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.00</b></div></div><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-46 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>10 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$23.75</b></div></div><div class="drv"><div class="drv-name">Walterwhite</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-15 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>26 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>1/6</b></div><div class="drv-row"><span>Revenue</span><b>$277.50</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
+              <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$32.15</b></div></div><div class="drv"><div class="drv-name">Kyle Massenburg</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+45 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>12 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$25.40</b></div></div></div><div class="drivers" data-base="South Indy" data-win="yesterday" hidden><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-22 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>5 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$22.00</b></div></div><div class="drv"><div class="drv-name">Steve Fites</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
+              <div class="drv-row"><span>Avg run</span><b>14 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$49.40</b></div></div></div><div class="drivers" data-base="South Indy" data-win="30" hidden><div class="drv"><div class="drv-name">Steve Fites</div>
+              <div class="drv-row"><span>Jobs</span><b>7</b></div><div class="drv-row"><span>Completed</span><b>7</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-15 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>24 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>1/7</b></div><div class="drv-row"><span>Revenue</span><b>$326.90</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
               <div class="drv-row"><span>Jobs</span><b>3</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-5 min</b></div>
@@ -1057,12 +1193,17 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-27 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$30.70</b></div></div></div><div class="drivers" data-base="South Indy" data-win="45" hidden><div class="drv"><div class="drv-name">Steve Fites</div>
-              <div class="drv-row"><span>Jobs</span><b>6</b></div><div class="drv-row"><span>Completed</span><b>6</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$30.70</b></div></div><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-22 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>5 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$22.00</b></div></div></div><div class="drivers" data-base="South Indy" data-win="45" hidden><div class="drv"><div class="drv-name">Steve Fites</div>
+              <div class="drv-row"><span>Jobs</span><b>7</b></div><div class="drv-row"><span>Completed</span><b>7</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-15 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>26 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>1/6</b></div><div class="drv-row"><span>Revenue</span><b>$277.50</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
+              <div class="drv-row"><span>Avg run</span><b>24 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>1/7</b></div><div class="drv-row"><span>Revenue</span><b>$326.90</b></div></div><div class="drv"><div class="drv-name">Trent Radcliff</div>
               <div class="drv-row"><span>Jobs</span><b>3</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-5 min</b></div>
@@ -1077,12 +1218,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-41 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>11 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>1/3</b></div><div class="drv-row"><span>Revenue</span><b>$84.30</b></div></div><div class="drv"><div class="drv-name">-15</div>
-              <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>2</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="bad-ink">+10 min</b></div>
-              <div class="drv-row"><span>Avg run</span><b>36 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/2</b></div><div class="drv-row"><span>Revenue</span><b>$122.15</b></div></div><div class="drv"><div class="drv-name">Quinton Fannin</div>
+              <div class="drv-row"><span>Location on</span><b>1/3</b></div><div class="drv-row"><span>Revenue</span><b>$84.30</b></div></div><div class="drv"><div class="drv-name">Quinton Fannin</div>
               <div class="drv-row"><span>Jobs</span><b>2</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="bad-ink">1</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-18 min</b></div>
@@ -1092,12 +1228,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
               <div class="drv-row"><span>Avg run</span><b>9 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>1/2</b></div><div class="drv-row"><span>Revenue</span><b>$47.75</b></div></div><div class="drv"><div class="drv-name">-711</div>
-              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>0</b></div>
-              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
-              <div class="drv-row"><span>ATA vs ETA</span><b class="">—</b></div>
-              <div class="drv-row"><span>Avg run</span><b>18 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$0.00</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
+              <div class="drv-row"><span>Location on</span><b>1/2</b></div><div class="drv-row"><span>Revenue</span><b>$47.75</b></div></div><div class="drv"><div class="drv-name">Christian Moreno</div>
               <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-36 min</b></div>
@@ -1117,34 +1248,39 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
               <div class="drv-row"><span>GOA</span><b class="">0</b></div>
               <div class="drv-row"><span>ATA vs ETA</span><b class="">-27 min</b></div>
               <div class="drv-row"><span>Avg run</span><b>16 mi</b></div>
-              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$30.70</b></div></div></div></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$30.70</b></div></div><div class="drv"><div class="drv-name">Santose</div>
+              <div class="drv-row"><span>Jobs</span><b>1</b></div><div class="drv-row"><span>Completed</span><b>1</b></div>
+              <div class="drv-row"><span>GOA</span><b class="">0</b></div>
+              <div class="drv-row"><span>ATA vs ETA</span><b class="">-22 min</b></div>
+              <div class="drv-row"><span>Avg run</span><b>5 mi</b></div>
+              <div class="drv-row"><span>Location on</span><b>0/1</b></div><div class="drv-row"><span>Revenue</span><b>$22.00</b></div></div></div></div>
 </section>
 
-<section><div class="mix" data-base="All" data-win="yesterday" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>5</b></span><span class="chip">Day <b>2</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46151 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46260 <b>1</b></span><span class="chip">46062 <b>1</b></span><span class="chip">46032 <b>1</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>4</b></span><span class="chip">Lockout <b>2</b></span><span class="chip">Fuel <b>1</b></span></div></div></div><div class="mix" data-base="All" data-win="30" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>31</b></span><span class="chip">Day <b>14</b></span><span class="chip">Overnight <b>4</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46055 <b>7</b></span><span class="chip">46227 <b>4</b></span><span class="chip">46151 <b>4</b></span><span class="chip">46032 <b>4</b></span><span class="chip">46131 <b>3</b></span><span class="chip">47201 <b>3</b></span><span class="chip">46142 <b>2</b></span><span class="chip">46205 <b>2</b></span><span class="chip">46235 <b>2</b></span><span class="chip">46143 <b>2</b></span><span class="chip">46062 <b>2</b></span><span class="chip">46260 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46240 <b>1</b></span><span class="chip">46107 <b>1</b></span><span class="chip">46221 <b>1</b></span><span class="chip">46219 <b>1</b></span><span class="chip">46077 <b>1</b></span><span class="chip">46250 <b>1</b></span><span class="chip">46158 <b>1</b></span><span class="chip">46225 <b>1</b></span><span class="chip">46259 <b>1</b></span><span class="chip">46226 <b>1</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>21</b></span><span class="chip">Jump <b>14</b></span><span class="chip">Lockout <b>9</b></span><span class="chip">Fuel <b>3</b></span><span class="chip">Medium Duty Tire Change <b>1</b></span><span class="chip">Light Duty Parts Delivery + 1hr Labor <b>1</b></span></div></div></div><div class="mix" data-base="All" data-win="45" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>31</b></span><span class="chip">Day <b>19</b></span><span class="chip">Overnight <b>4</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46055 <b>7</b></span><span class="chip">46131 <b>4</b></span><span class="chip">47201 <b>4</b></span><span class="chip">46227 <b>4</b></span><span class="chip">46151 <b>4</b></span><span class="chip">46032 <b>4</b></span><span class="chip">46062 <b>3</b></span><span class="chip">46142 <b>2</b></span><span class="chip">46205 <b>2</b></span><span class="chip">46235 <b>2</b></span><span class="chip">46143 <b>2</b></span><span class="chip">46260 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46184 <b>1</b></span><span class="chip">46268 <b>1</b></span><span class="chip">46240 <b>1</b></span><span class="chip">46107 <b>1</b></span><span class="chip">46221 <b>1</b></span><span class="chip">46219 <b>1</b></span><span class="chip">46077 <b>1</b></span><span class="chip">46250 <b>1</b></span><span class="chip">46158 <b>1</b></span><span class="chip">46225 <b>1</b></span><span class="chip">46259 <b>1</b></span><span class="chip">46226 <b>1</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>24</b></span><span class="chip">Jump <b>15</b></span><span class="chip">Lockout <b>10</b></span><span class="chip">Fuel <b>3</b></span><span class="chip">Medium Duty Tire Change <b>1</b></span><span class="chip">Light Duty Parts Delivery + 1hr Labor <b>1</b></span></div></div></div><div class="mix" data-base="Indy Main" data-win="yesterday" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>3</b></span><span class="chip">Day <b>2</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46220 <b>2</b></span><span class="chip">46260 <b>1</b></span><span class="chip">46062 <b>1</b></span><span class="chip">46032 <b>1</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>3</b></span><span class="chip">Lockout <b>1</b></span><span class="chip">Fuel <b>1</b></span></div></div></div><div class="mix" data-base="Indy Main" data-win="30" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>17</b></span><span class="chip">Day <b>7</b></span><span class="chip">Overnight <b>2</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46055 <b>7</b></span><span class="chip">46032 <b>4</b></span><span class="chip">46205 <b>2</b></span><span class="chip">46235 <b>2</b></span><span class="chip">46062 <b>2</b></span><span class="chip">46260 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46240 <b>1</b></span><span class="chip">46219 <b>1</b></span><span class="chip">46077 <b>1</b></span><span class="chip">46250 <b>1</b></span><span class="chip">46226 <b>1</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>10</b></span><span class="chip">Jump <b>8</b></span><span class="chip">Lockout <b>5</b></span><span class="chip">Medium Duty Tire Change <b>1</b></span><span class="chip">Light Duty Parts Delivery + 1hr Labor <b>1</b></span><span class="chip">Fuel <b>1</b></span></div></div></div><div class="mix" data-base="Indy Main" data-win="45" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>17</b></span><span class="chip">Day <b>9</b></span><span class="chip">Overnight <b>2</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46055 <b>7</b></span><span class="chip">46032 <b>4</b></span><span class="chip">46062 <b>3</b></span><span class="chip">46205 <b>2</b></span><span class="chip">46235 <b>2</b></span><span class="chip">46260 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46268 <b>1</b></span><span class="chip">46240 <b>1</b></span><span class="chip">46219 <b>1</b></span><span class="chip">46077 <b>1</b></span><span class="chip">46250 <b>1</b></span><span class="chip">46226 <b>1</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>10</b></span><span class="chip">Jump <b>9</b></span><span class="chip">Lockout <b>6</b></span><span class="chip">Medium Duty Tire Change <b>1</b></span><span class="chip">Light Duty Parts Delivery + 1hr Labor <b>1</b></span><span class="chip">Fuel <b>1</b></span></div></div></div><div class="mix" data-base="South Indy" data-win="yesterday" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>2</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46151 <b>2</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>1</b></span><span class="chip">Lockout <b>1</b></span></div></div></div><div class="mix" data-base="South Indy" data-win="30" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>14</b></span><span class="chip">Day <b>7</b></span><span class="chip">Overnight <b>2</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46227 <b>4</b></span><span class="chip">46151 <b>4</b></span><span class="chip">46131 <b>3</b></span><span class="chip">47201 <b>3</b></span><span class="chip">46142 <b>2</b></span><span class="chip">46143 <b>2</b></span><span class="chip">46107 <b>1</b></span><span class="chip">46221 <b>1</b></span><span class="chip">46158 <b>1</b></span><span class="chip">46225 <b>1</b></span><span class="chip">46259 <b>1</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>11</b></span><span class="chip">Jump <b>6</b></span><span class="chip">Lockout <b>4</b></span><span class="chip">Fuel <b>2</b></span></div></div></div><div class="mix" data-base="South Indy" data-win="45" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>14</b></span><span class="chip">Day <b>10</b></span><span class="chip">Overnight <b>2</b></span></div></div>
-  <div><h3>Zip</h3><div class="chips"><span class="chip">46131 <b>4</b></span><span class="chip">47201 <b>4</b></span><span class="chip">46227 <b>4</b></span><span class="chip">46151 <b>4</b></span><span class="chip">46142 <b>2</b></span><span class="chip">46143 <b>2</b></span><span class="chip">46184 <b>1</b></span><span class="chip">46107 <b>1</b></span><span class="chip">46221 <b>1</b></span><span class="chip">46158 <b>1</b></span><span class="chip">46225 <b>1</b></span><span class="chip">46259 <b>1</b></span></div></div>
-  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>14</b></span><span class="chip">Jump <b>6</b></span><span class="chip">Lockout <b>4</b></span><span class="chip">Fuel <b>2</b></span></div></div></div></section>
+<section><div class="mix" data-base="All" data-win="yesterday" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>6</b></span><span class="chip">Day <b>4</b></span><span class="chip">Overnight <b>1</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46235 <b>2</b></span><span class="chip">46226 <b>1</b></span><span class="chip">46202 <b>1</b></span><span class="chip">46205 <b>1</b></span><span class="chip">46254 <b>1</b></span><span class="chip">46237 <b>1</b></span><span class="chip">46038 <b>1</b></span><span class="chip">46239 <b>1</b></span><span class="chip">46062 <b>1</b></span><span class="chip">46032 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>4</b></span><span class="chip">Jump <b>3</b></span><span class="chip">Lockout <b>3</b></span><span class="chip">Fuel <b>1</b></span></div></div></div><div class="mix" data-base="All" data-win="30" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>37</b></span><span class="chip">Day <b>18</b></span><span class="chip">Overnight <b>5</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46055 <b>7</b></span><span class="chip">46032 <b>5</b></span><span class="chip">46227 <b>4</b></span><span class="chip">46151 <b>4</b></span><span class="chip">46235 <b>4</b></span><span class="chip">46131 <b>3</b></span><span class="chip">47201 <b>3</b></span><span class="chip">46205 <b>3</b></span><span class="chip">46062 <b>3</b></span><span class="chip">46142 <b>2</b></span><span class="chip">46143 <b>2</b></span><span class="chip">46260 <b>2</b></span><span class="chip">46226 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46240 <b>1</b></span><span class="chip">46107 <b>1</b></span><span class="chip">46221 <b>1</b></span><span class="chip">46219 <b>1</b></span><span class="chip">46077 <b>1</b></span><span class="chip">46250 <b>1</b></span><span class="chip">46158 <b>1</b></span><span class="chip">46225 <b>1</b></span><span class="chip">46259 <b>1</b></span><span class="chip">46202 <b>1</b></span><span class="chip">46254 <b>1</b></span><span class="chip">46237 <b>1</b></span><span class="chip">46038 <b>1</b></span><span class="chip">46239 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>25</b></span><span class="chip">Jump <b>17</b></span><span class="chip">Lockout <b>12</b></span><span class="chip">Fuel <b>4</b></span><span class="chip">Medium Duty Tire Change <b>1</b></span><span class="chip">Light Duty Parts Delivery + 1hr Labor <b>1</b></span></div></div></div><div class="mix" data-base="All" data-win="45" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>37</b></span><span class="chip">Day <b>19</b></span><span class="chip">Overnight <b>5</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46055 <b>7</b></span><span class="chip">46032 <b>5</b></span><span class="chip">46227 <b>4</b></span><span class="chip">46151 <b>4</b></span><span class="chip">46235 <b>4</b></span><span class="chip">46131 <b>3</b></span><span class="chip">47201 <b>3</b></span><span class="chip">46205 <b>3</b></span><span class="chip">46062 <b>3</b></span><span class="chip">46142 <b>2</b></span><span class="chip">46143 <b>2</b></span><span class="chip">46260 <b>2</b></span><span class="chip">46226 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46268 <b>1</b></span><span class="chip">46240 <b>1</b></span><span class="chip">46107 <b>1</b></span><span class="chip">46221 <b>1</b></span><span class="chip">46219 <b>1</b></span><span class="chip">46077 <b>1</b></span><span class="chip">46250 <b>1</b></span><span class="chip">46158 <b>1</b></span><span class="chip">46225 <b>1</b></span><span class="chip">46259 <b>1</b></span><span class="chip">46202 <b>1</b></span><span class="chip">46254 <b>1</b></span><span class="chip">46237 <b>1</b></span><span class="chip">46038 <b>1</b></span><span class="chip">46239 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>25</b></span><span class="chip">Jump <b>17</b></span><span class="chip">Lockout <b>13</b></span><span class="chip">Fuel <b>4</b></span><span class="chip">Medium Duty Tire Change <b>1</b></span><span class="chip">Light Duty Parts Delivery + 1hr Labor <b>1</b></span></div></div></div><div class="mix" data-base="Indy Main" data-win="yesterday" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Day <b>4</b></span><span class="chip">Evening <b>4</b></span><span class="chip">Overnight <b>1</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46235 <b>2</b></span><span class="chip">46226 <b>1</b></span><span class="chip">46202 <b>1</b></span><span class="chip">46205 <b>1</b></span><span class="chip">46254 <b>1</b></span><span class="chip">46038 <b>1</b></span><span class="chip">46062 <b>1</b></span><span class="chip">46032 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Jump <b>3</b></span><span class="chip">Tire <b>3</b></span><span class="chip">Lockout <b>3</b></span></div></div></div><div class="mix" data-base="Indy Main" data-win="30" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>21</b></span><span class="chip">Day <b>11</b></span><span class="chip">Overnight <b>3</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46055 <b>7</b></span><span class="chip">46032 <b>5</b></span><span class="chip">46235 <b>4</b></span><span class="chip">46205 <b>3</b></span><span class="chip">46062 <b>3</b></span><span class="chip">46260 <b>2</b></span><span class="chip">46226 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46240 <b>1</b></span><span class="chip">46219 <b>1</b></span><span class="chip">46077 <b>1</b></span><span class="chip">46250 <b>1</b></span><span class="chip">46202 <b>1</b></span><span class="chip">46254 <b>1</b></span><span class="chip">46038 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>13</b></span><span class="chip">Jump <b>11</b></span><span class="chip">Lockout <b>8</b></span><span class="chip">Medium Duty Tire Change <b>1</b></span><span class="chip">Light Duty Parts Delivery + 1hr Labor <b>1</b></span><span class="chip">Fuel <b>1</b></span></div></div></div><div class="mix" data-base="Indy Main" data-win="45" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>21</b></span><span class="chip">Day <b>12</b></span><span class="chip">Overnight <b>3</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46055 <b>7</b></span><span class="chip">46032 <b>5</b></span><span class="chip">46235 <b>4</b></span><span class="chip">46205 <b>3</b></span><span class="chip">46062 <b>3</b></span><span class="chip">46260 <b>2</b></span><span class="chip">46226 <b>2</b></span><span class="chip">46220 <b>2</b></span><span class="chip">46268 <b>1</b></span><span class="chip">46240 <b>1</b></span><span class="chip">46219 <b>1</b></span><span class="chip">46077 <b>1</b></span><span class="chip">46250 <b>1</b></span><span class="chip">46202 <b>1</b></span><span class="chip">46254 <b>1</b></span><span class="chip">46038 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>13</b></span><span class="chip">Jump <b>11</b></span><span class="chip">Lockout <b>9</b></span><span class="chip">Medium Duty Tire Change <b>1</b></span><span class="chip">Light Duty Parts Delivery + 1hr Labor <b>1</b></span><span class="chip">Fuel <b>1</b></span></div></div></div><div class="mix" data-base="South Indy" data-win="yesterday" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>2</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46237 <b>1</b></span><span class="chip">46239 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>1</b></span><span class="chip">Fuel <b>1</b></span></div></div></div><div class="mix" data-base="South Indy" data-win="30" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>16</b></span><span class="chip">Day <b>7</b></span><span class="chip">Overnight <b>2</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46227 <b>4</b></span><span class="chip">46151 <b>4</b></span><span class="chip">46131 <b>3</b></span><span class="chip">47201 <b>3</b></span><span class="chip">46142 <b>2</b></span><span class="chip">46143 <b>2</b></span><span class="chip">46107 <b>1</b></span><span class="chip">46221 <b>1</b></span><span class="chip">46158 <b>1</b></span><span class="chip">46225 <b>1</b></span><span class="chip">46259 <b>1</b></span><span class="chip">46237 <b>1</b></span><span class="chip">46239 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>12</b></span><span class="chip">Jump <b>6</b></span><span class="chip">Lockout <b>4</b></span><span class="chip">Fuel <b>3</b></span></div></div></div><div class="mix" data-base="South Indy" data-win="45" hidden><div><h3>Time of day</h3><div class="chips"><span class="chip">Evening <b>16</b></span><span class="chip">Day <b>7</b></span><span class="chip">Overnight <b>2</b></span></div></div>
+  <div><h3>Zip</h3><div class="chips"><span class="chip">46227 <b>4</b></span><span class="chip">46151 <b>4</b></span><span class="chip">46131 <b>3</b></span><span class="chip">47201 <b>3</b></span><span class="chip">46142 <b>2</b></span><span class="chip">46143 <b>2</b></span><span class="chip">46107 <b>1</b></span><span class="chip">46221 <b>1</b></span><span class="chip">46158 <b>1</b></span><span class="chip">46225 <b>1</b></span><span class="chip">46259 <b>1</b></span><span class="chip">46237 <b>1</b></span><span class="chip">46239 <b>1</b></span></div></div>
+  <div><h3>Service</h3><div class="chips"><span class="chip">Tire <b>12</b></span><span class="chip">Jump <b>6</b></span><span class="chip">Lockout <b>4</b></span><span class="chip">Fuel <b>3</b></span></div></div></div></section>
 
 <footer>Completion = completed ÷ (accepted − customer/dispatcher early cancels), the Swoop Insights formula, on Agero's 45-day window. Acceptance, NPS, ETA accuracy, location sharing and photo quality use the 30-day Performance Summary window. Targets are Agero's, read from the Performance Summary "pts below target" line: completion 90, NPS 85, ETA 85, location 85, photo 85; acceptance assumed at 90. Bases are Swoop rate agreements; Agero scores each one separately. NPS counts only jobs where SRS was the first and only provider.</footer>
 </div>
 <script>
 (function(){
-  var KPI = {"All": {"yesterday": {"offered": 7, "accepted": 7, "completed": 5, "goa": 0, "cust_cancel": 2, "scorable": 5, "refused": 0, "acceptance": 100.0, "completion": 100.0, "goa_rate": 0.0, "eta_accuracy": 75.0, "eta_n": 4, "loc_sharing": 0.0, "photo": 100.0, "nps": 100, "nps_n": 1, "P": 1, "N": 0, "D": 0, "revenue": 201.35, "goa_revenue": 0, "avg_completed_revenue": 37.27, "provisional": 0, "reassigned": 0, "unsuccessful": 0, "avg_miles": 14.3, "max_miles": 35.2, "owner_assigned": 0, "start": "2026-09-11", "unscored": 2}, "30": {"offered": 49, "accepted": 49, "completed": 36, "goa": 4, "cust_cancel": 5, "scorable": 44, "refused": 0, "acceptance": 100.0, "completion": 81.8, "goa_rate": 9.1, "eta_accuracy": 60.7, "eta_n": 28, "loc_sharing": 6.1, "photo": 13.9, "nps": 95, "nps_n": 22, "P": 21, "N": 1, "D": 0, "revenue": 1362.93, "goa_revenue": 60.0, "avg_completed_revenue": 34.53, "provisional": 0, "reassigned": 3, "unsuccessful": 1, "avg_miles": 14.7, "max_miles": 47.1, "owner_assigned": 5, "start": "2026-08-13", "unscored": 16}, "45": {"offered": 54, "accepted": 53, "completed": 39, "goa": 4, "cust_cancel": 6, "scorable": 47, "refused": 1, "acceptance": 98.1, "completion": 83.0, "goa_rate": 8.5, "eta_accuracy": 58.6, "eta_n": 29, "loc_sharing": 5.7, "photo": 12.8, "nps": 96, "nps_n": 24, "P": 23, "N": 1, "D": 0, "revenue": 1510.78, "goa_revenue": 60.0, "avg_completed_revenue": 35.66, "provisional": 0, "reassigned": 3, "unsuccessful": 1, "avg_miles": 15.5, "max_miles": 50.1, "owner_assigned": 5, "start": "2026-07-29", "unscored": 18}}, "Indy Main": {"yesterday": {"offered": 5, "accepted": 5, "completed": 3, "goa": 0, "cust_cancel": 2, "scorable": 3, "refused": 0, "acceptance": 100.0, "completion": 100.0, "goa_rate": 0.0, "eta_accuracy": 66.7, "eta_n": 3, "loc_sharing": 0.0, "photo": 100.0, "nps": null, "nps_n": 0, "P": 0, "N": 0, "D": 0, "revenue": 84.0, "goa_revenue": 0, "avg_completed_revenue": 23.0, "provisional": 0, "reassigned": 0, "unsuccessful": 0, "avg_miles": 6.2, "max_miles": 15.2, "owner_assigned": 0, "start": "2026-09-11", "unscored": 0}, "30": {"offered": 26, "accepted": 26, "completed": 17, "goa": 1, "cust_cancel": 5, "scorable": 21, "refused": 0, "acceptance": 100.0, "completion": 81.0, "goa_rate": 4.8, "eta_accuracy": 42.9, "eta_n": 14, "loc_sharing": 0.0, "photo": 17.6, "nps": 100, "nps_n": 9, "P": 9, "N": 0, "D": 0, "revenue": 541.78, "goa_revenue": 15.0, "avg_completed_revenue": 28.34, "provisional": 0, "reassigned": 3, "unsuccessful": 0, "avg_miles": 9.4, "max_miles": 15.7, "owner_assigned": 2, "start": "2026-08-13", "unscored": 10}, "45": {"offered": 28, "accepted": 27, "completed": 18, "goa": 1, "cust_cancel": 5, "scorable": 22, "refused": 1, "acceptance": 96.4, "completion": 81.8, "goa_rate": 4.5, "eta_accuracy": 42.9, "eta_n": 14, "loc_sharing": 0.0, "photo": 16.7, "nps": 100, "nps_n": 10, "P": 10, "N": 0, "D": 0, "revenue": 567.48, "goa_revenue": 15.0, "avg_completed_revenue": 28.19, "provisional": 0, "reassigned": 3, "unsuccessful": 0, "avg_miles": 9.5, "max_miles": 15.7, "owner_assigned": 2, "start": "2026-07-29", "unscored": 12}}, "South Indy": {"yesterday": {"offered": 2, "accepted": 2, "completed": 2, "goa": 0, "cust_cancel": 0, "scorable": 2, "refused": 0, "acceptance": 100.0, "completion": 100.0, "goa_rate": 0.0, "eta_accuracy": 100.0, "eta_n": 1, "loc_sharing": 0.0, "photo": 100.0, "nps": 100, "nps_n": 1, "P": 1, "N": 0, "D": 0, "revenue": 117.35, "goa_revenue": 0, "avg_completed_revenue": 58.67, "provisional": 0, "reassigned": 0, "unsuccessful": 0, "avg_miles": 34.5, "max_miles": 35.2, "owner_assigned": 0, "start": "2026-09-11", "unscored": 2}, "30": {"offered": 23, "accepted": 23, "completed": 19, "goa": 3, "cust_cancel": 0, "scorable": 23, "refused": 0, "acceptance": 100.0, "completion": 82.6, "goa_rate": 13.0, "eta_accuracy": 78.6, "eta_n": 14, "loc_sharing": 13.0, "photo": 10.5, "nps": 92, "nps_n": 13, "P": 12, "N": 1, "D": 0, "revenue": 821.15, "goa_revenue": 45.0, "avg_completed_revenue": 40.06, "provisional": 0, "reassigned": 0, "unsuccessful": 1, "avg_miles": 20.6, "max_miles": 47.1, "owner_assigned": 3, "start": "2026-08-13", "unscored": 6}, "45": {"offered": 26, "accepted": 26, "completed": 21, "goa": 3, "cust_cancel": 1, "scorable": 25, "refused": 0, "acceptance": 100.0, "completion": 84.0, "goa_rate": 12.0, "eta_accuracy": 73.3, "eta_n": 15, "loc_sharing": 11.5, "photo": 9.5, "nps": 93, "nps_n": 14, "P": 13, "N": 1, "D": 0, "revenue": 943.3, "goa_revenue": 45.0, "avg_completed_revenue": 42.06, "provisional": 0, "reassigned": 0, "unsuccessful": 1, "avg_miles": 21.7, "max_miles": 50.1, "owner_assigned": 3, "start": "2026-07-29", "unscored": 6}}}, CALC = {"All": {"done45": 39, "base45": 47, "P": 21, "N": 1, "D": 0}, "Indy Main": {"done45": 18, "base45": 22, "P": 9, "N": 0, "D": 0}, "South Indy": {"done45": 21, "base45": 25, "P": 12, "N": 1, "D": 0}}, AS_OF = "2026-09-11", ALL = "All";
+  var KPI = {"All": {"yesterday": {"offered": 11, "accepted": 11, "completed": 11, "goa": 0, "cust_cancel": 0, "scorable": 11, "refused": 0, "acceptance": 100.0, "completion": 100.0, "goa_rate": 0.0, "eta_accuracy": 75.0, "eta_n": 8, "loc_sharing": 0.0, "photo": 100.0, "nps": 100, "nps_n": 6, "P": 6, "N": 0, "D": 0, "revenue": 292.8, "goa_revenue": 0, "avg_completed_revenue": 26.62, "provisional": 0, "reassigned": 0, "unsuccessful": 0, "avg_miles": 9.5, "max_miles": 16.1, "owner_assigned": 1, "start": "2026-09-12", "unscored": 1}, "30": {"offered": 60, "accepted": 60, "completed": 47, "goa": 4, "cust_cancel": 5, "scorable": 55, "refused": 0, "acceptance": 100.0, "completion": 85.5, "goa_rate": 7.3, "eta_accuracy": 63.9, "eta_n": 36, "loc_sharing": 5.0, "photo": 34.0, "nps": 96, "nps_n": 28, "P": 27, "N": 1, "D": 0, "revenue": 1655.73, "goa_revenue": 60.0, "avg_completed_revenue": 32.68, "provisional": 0, "reassigned": 3, "unsuccessful": 1, "avg_miles": 13.7, "max_miles": 47.1, "owner_assigned": 6, "start": "2026-08-14", "unscored": 17}, "45": {"offered": 61, "accepted": 60, "completed": 47, "goa": 4, "cust_cancel": 5, "scorable": 55, "refused": 1, "acceptance": 98.4, "completion": 85.5, "goa_rate": 7.3, "eta_accuracy": 63.9, "eta_n": 36, "loc_sharing": 5.0, "photo": 34.0, "nps": 96, "nps_n": 28, "P": 27, "N": 1, "D": 0, "revenue": 1655.73, "goa_revenue": 60.0, "avg_completed_revenue": 32.68, "provisional": 0, "reassigned": 3, "unsuccessful": 1, "avg_miles": 13.7, "max_miles": 47.1, "owner_assigned": 6, "start": "2026-07-30", "unscored": 17}}, "Indy Main": {"yesterday": {"offered": 9, "accepted": 9, "completed": 9, "goa": 0, "cust_cancel": 0, "scorable": 9, "refused": 0, "acceptance": 100.0, "completion": 100.0, "goa_rate": 0.0, "eta_accuracy": 71.4, "eta_n": 7, "loc_sharing": 0.0, "photo": 100.0, "nps": 100, "nps_n": 5, "P": 5, "N": 0, "D": 0, "revenue": 221.4, "goa_revenue": 0, "avg_completed_revenue": 24.6, "provisional": 0, "reassigned": 0, "unsuccessful": 0, "avg_miles": 9.5, "max_miles": 16.1, "owner_assigned": 1, "start": "2026-09-12", "unscored": 0}, "30": {"offered": 35, "accepted": 35, "completed": 26, "goa": 1, "cust_cancel": 5, "scorable": 30, "refused": 0, "acceptance": 100.0, "completion": 86.7, "goa_rate": 3.3, "eta_accuracy": 52.4, "eta_n": 21, "loc_sharing": 0.0, "photo": 46.2, "nps": 100, "nps_n": 14, "P": 14, "N": 0, "D": 0, "revenue": 763.18, "goa_revenue": 15.0, "avg_completed_revenue": 27.05, "provisional": 0, "reassigned": 3, "unsuccessful": 0, "avg_miles": 9.5, "max_miles": 16.1, "owner_assigned": 3, "start": "2026-08-14", "unscored": 10}, "45": {"offered": 36, "accepted": 35, "completed": 26, "goa": 1, "cust_cancel": 5, "scorable": 30, "refused": 1, "acceptance": 97.2, "completion": 86.7, "goa_rate": 3.3, "eta_accuracy": 52.4, "eta_n": 21, "loc_sharing": 0.0, "photo": 46.2, "nps": 100, "nps_n": 14, "P": 14, "N": 0, "D": 0, "revenue": 763.18, "goa_revenue": 15.0, "avg_completed_revenue": 27.05, "provisional": 0, "reassigned": 3, "unsuccessful": 0, "avg_miles": 9.5, "max_miles": 16.1, "owner_assigned": 3, "start": "2026-07-30", "unscored": 10}}, "South Indy": {"yesterday": {"offered": 2, "accepted": 2, "completed": 2, "goa": 0, "cust_cancel": 0, "scorable": 2, "refused": 0, "acceptance": 100.0, "completion": 100.0, "goa_rate": 0.0, "eta_accuracy": 100.0, "eta_n": 1, "loc_sharing": 0.0, "photo": 100.0, "nps": 100, "nps_n": 1, "P": 1, "N": 0, "D": 0, "revenue": 71.4, "goa_revenue": 0, "avg_completed_revenue": 35.7, "provisional": 0, "reassigned": 0, "unsuccessful": 0, "avg_miles": 9.4, "max_miles": 13.6, "owner_assigned": 0, "start": "2026-09-12", "unscored": 1}, "30": {"offered": 25, "accepted": 25, "completed": 21, "goa": 3, "cust_cancel": 0, "scorable": 25, "refused": 0, "acceptance": 100.0, "completion": 84.0, "goa_rate": 12.0, "eta_accuracy": 80.0, "eta_n": 15, "loc_sharing": 12.0, "photo": 19.0, "nps": 93, "nps_n": 14, "P": 13, "N": 1, "D": 0, "revenue": 892.55, "goa_revenue": 45.0, "avg_completed_revenue": 39.65, "provisional": 0, "reassigned": 0, "unsuccessful": 1, "avg_miles": 19.7, "max_miles": 47.1, "owner_assigned": 3, "start": "2026-08-14", "unscored": 7}, "45": {"offered": 25, "accepted": 25, "completed": 21, "goa": 3, "cust_cancel": 0, "scorable": 25, "refused": 0, "acceptance": 100.0, "completion": 84.0, "goa_rate": 12.0, "eta_accuracy": 80.0, "eta_n": 15, "loc_sharing": 12.0, "photo": 19.0, "nps": 93, "nps_n": 14, "P": 13, "N": 1, "D": 0, "revenue": 892.55, "goa_revenue": 45.0, "avg_completed_revenue": 39.65, "provisional": 0, "reassigned": 0, "unsuccessful": 1, "avg_miles": 19.7, "max_miles": 47.1, "owner_assigned": 3, "start": "2026-07-30", "unscored": 7}}}, CALC = {"All": {"done45": 47, "base45": 55, "P": 27, "N": 1, "D": 0}, "Indy Main": {"done45": 26, "base45": 30, "P": 14, "N": 0, "D": 0}, "South Indy": {"done45": 21, "base45": 25, "P": 13, "N": 1, "D": 0}}, AS_OF = "2026-09-12", ALL = "All";
   var TC = 90, TN = 85;
   var LABEL = {yesterday: "yesterday", "30": "last 30 days", "45": "last 45 days"};
   var win = 'yesterday', base = ALL, cnt = {c:0,g:0,p:0,n:0,d:0};
