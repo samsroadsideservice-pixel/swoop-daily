@@ -3929,7 +3929,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--muted);border-top:1px solid 
     renderCalc();
   }
   function renderCalc(){
-    var C = CALC[base]; var root = document.querySelector('[data-base="'+base+'"]:not(tr)'); if(!root) return;
+    var C = CALC[base]; var root = document.querySelector('[data-base="'+base+'"]:not(tr):not([data-win])'); if(!root) return;
     Object.keys(cnt).forEach(function(k){ var el=root.querySelector('[data-cnt="'+k+'"]'); if(el) el.textContent = cnt[k]; });
     var done=C.done45+cnt.c, b=C.base45+cnt.c+cnt.g, comp = b ? Math.round(done/b*1000)/10 : null;
     var pc=root.querySelector('[data-p="c"]'); pc.textContent = comp==null?'—':comp+'%'; pc.className='calc-val '+(comp==null?'':cls(comp,TC));
