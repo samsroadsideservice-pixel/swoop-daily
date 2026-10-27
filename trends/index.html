@@ -35,6 +35,16 @@ svg{display:block;width:100%;height:auto;margin-top:10px}
 .hist div.p{background:var(--good)} .hist div.n{background:var(--warn)} .hist div.d{background:var(--bad)}
 .hist div b{position:absolute;top:-16px;left:0;right:0;text-align:center;font-size:11px;color:var(--ink-2);font-weight:600}
 .hist-x{display:grid;grid-template-columns:repeat(11,1fr);gap:4px;font-size:11px;color:var(--muted);text-align:center;margin-top:3px}
+.lights{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:0 0 6px}
+.light{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 14px;cursor:pointer;min-width:0}
+.light .lamp{width:48px;height:48px;border-radius:50%;grid-row:1/4;align-self:start;background:var(--line);box-shadow:inset 0 -3px 6px rgba(0,0,0,.12)}
+.light.good .lamp{background:var(--good)} .light.warn .lamp{background:var(--warn)} .light.bad .lamp{background:var(--bad)}
+.light .nm{font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;font-size:21px;font-weight:700;line-height:1.1}
+.light .nm b{font-weight:700;margin-left:8px;letter-spacing:.04em} .light.good .nm b{color:var(--good)} .light.warn .nm b{color:var(--warn)} .light.bad .nm b{color:var(--bad)} .light.none .nm b{color:var(--muted)}
+.light .why{font-size:13.5px;color:var(--ink-2);line-height:1.35}
+.dots{display:flex;gap:6px;align-items:center;margin-top:6px;flex-wrap:wrap} .dots i{width:12px;height:12px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line);display:inline-block}
+.dots i.good{background:var(--good);border-color:var(--good)} .dots i.warn{background:var(--warn);border-color:var(--warn)} .dots i.bad{background:var(--bad);border-color:var(--bad)} .dots span{font-size:11px;color:var(--muted);margin-left:2px}
+.lights-note{color:var(--muted);font-size:12px;margin:0 0 18px;line-height:1.45}
 .tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:6px 9px;border-radius:6px;white-space:nowrap;z-index:9;display:none}
 footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
 </style>
@@ -42,6 +52,9 @@ footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
   <div class="eyebrow">Sam's Roadside Service · Swoop / Agero</div>
   <h1>Swoop Trends</h1>
   <div class="sub">Data through Monday Oct 26, 2026 · same exports and formulas as the <a href="../">daily dashboard</a>, verified against Swoop's Performance Summary gauges · updated with the morning run</div>
+  <div class="eyebrow" style="margin-bottom:8px">Yesterday's light · Monday Oct 26, 2026</div>
+  <div class="lights" id="lights"></div>
+  <div class="lights-note">Did yesterday pull the 30-day score down? <b>Green</b>: no. <b>Yellow</b>: yes, a survey below the line, or two or more jobs not completed (one non-complete is routine and does not turn the light). <b>Red</b>: the same score pulled down two days running, or two detractors or four non-completes inside two days. Dots are the last seven days. Tap a light to open that base. Surveys that arrive late can change yesterday's light the next morning.</div>
   <div class="bar"><span class="lbl">Window</span><div class="pills" id="wins"></div></div>
   <div class="bar"><span class="lbl">Base</span><div class="pills" id="bases"></div></div>
   <div class="grid">
@@ -117,6 +130,43 @@ footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
       tip.textContent = txt; tip.style.display = "block"; tip.style.left = Math.min(window.innerWidth - tip.offsetWidth - 8, e.clientX + 12) + "px"; tip.style.top = (e.clientY + 14) + "px"; };
     svg.onmouseleave = function(){ tip.style.display = "none"; };
   }
+  var DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  function listScores(a){ if (!a.length) return ""; if (a.length === 1) return (a[0] === 8 ? "an " : "a ") + a[0]; return a.slice(0, -1).join(", ") + " and " + a[a.length - 1]; }
+  function dayInfo(o, i){
+    var s = o.s[i], c = o.c[i], r = o.P[i] + o.N[i] + o.D[i], f = {i: i, s: s, c: c, miss: s - c, r: r, D: o.D[i], N: o.N[i], info: s > 0 || r > 0, hurtN: false, hurtC: false, det: [], neu: []};
+    for (var v = 0; v <= 10; v++) for (var k = 0; k < o.h[i][v]; k++) (v <= 6 ? f.det : v <= 8 ? f.neu : []).push(v);
+    if (r){ var ln = tr30(o, i - 1, "n"); f.npsDay = npsOf(o.P[i], o.N[i], o.D[i]); if (ln != null && f.npsDay < ln - 0.5) f.hurtN = true; }
+    if (s){ var lc = tr30(o, i - 1, "c"); f.compDay = pct(c, s); if (lc != null && f.compDay < lc - 0.5 && f.miss >= 2) f.hurtC = true; }   // one non-complete is routine; two or more below the line counts
+    f.hurt = f.hurtN || f.hurtC; return f;
+  }
+  function parts(f){
+    var a = [];
+    if (f.D) a.push(f.D + " detractor" + (f.D > 1 ? "s" : "") + " (" + listScores(f.det) + ")");
+    else if (f.hurtN) a.push(f.N + " survey" + (f.N > 1 ? "s" : "") + " below the line (" + listScores(f.neu) + ")");
+    if (f.hurtC) a.push(f.miss + " of " + f.s + " not completed");
+    return a;
+  }
+  function light(o, i){
+    var y = dayInfo(o, i), out = {y: y};
+    if (!y.info){ out.lvl = "none"; out.word = "NO JOBS"; out.why = "No scorable jobs or surveys that day."; return out; }
+    var p = null; for (var k = i - 1; k >= Math.max(0, i - 7); k--){ var q = dayInfo(o, k); if (q.info){ p = q; break; } }
+    var d1 = i > 0 ? dayInfo(o, i - 1) : null, D2 = y.D + (d1 ? d1.D : 0), M2 = y.miss + (d1 ? d1.miss : 0);
+    var red = (p && ((y.hurtN && p.hurtN) || (y.hurtC && p.hurtC))) ? ((y.hurtN && p.hurtN) ? "NPS" : "Completion") + " pulled down two days running" : D2 >= 2 ? D2 + " detractors in two days" : M2 >= 4 ? M2 + " not completed in two days" : null;
+    if (red){ out.lvl = "bad"; out.word = "RED"; out.why = red + ". " + DOW[dayDate(i).getDay()] + ": " + (parts(y).join(", ") || "clean") + ". " + DOW[dayDate(p.i).getDay()] + ": " + (parts(p).join(", ") || "clean") + "."; }
+    else if (y.hurt){ out.lvl = "warn"; out.word = "YELLOW"; out.why = parts(y).join(" · ") + ". Pulled the 30-day " + (y.hurtN && y.hurtC ? "NPS and completion" : y.hurtN ? "NPS" : "completion") + " down."; }
+    else { out.lvl = "good"; out.word = "GREEN"; out.why = (y.s ? y.c + " of " + y.s + " completed" : "no scorable jobs") + " · " + (y.r ? y.r + " survey" + (y.r > 1 ? "s" : "") + (y.N ? ", NPS " + y.npsDay + ", held the line" : ", all 9s and 10s") : "no surveys yet") + "."; }
+    return out;
+  }
+  function renderLights(){
+    var el = document.getElementById("lights"), last = nDays - 1; el.innerHTML = "";
+    DATA.bases.filter(function(b){ return b !== DATA.bases[0]; }).forEach(function(b){
+      var o = DATA.d[b], L = light(o, last), card = document.createElement("div"); card.className = "light " + L.lvl;
+      var dots = ""; for (var k = last - 6; k <= last; k++){ var lk = light(o, k); dots += '<i class="' + lk.lvl + '" title="' + fmtD(dayDate(k)) + ": " + lk.word + (lk.lvl === "none" ? "" : " · " + lk.why.replace(/"/g, "'")) + '"></i>'; }
+      card.innerHTML = '<div class="lamp"></div><div class="nm">' + b + '<b>' + L.word + '</b></div><div class="why">' + L.why + '</div><div class="dots">' + dots + '<span>last 7 days, oldest first</span></div>';
+      card.onclick = function(){ base = b; win = "7"; render(); document.getElementById("p-comp").scrollIntoView({behavior: "smooth", block: "start"}); };
+      el.appendChild(card);
+    });
+  }
   function render(){
     var o = DATA.d[base], pts = points(o), h = headline(pts), scope = (win === "yesterday" ? "yesterday" : win === "ytd" ? asOf.getFullYear() + " to date" : win === "ly" ? String(asOf.getFullYear() - 1) : "last " + win + " days") + " · " + base;
     document.getElementById("comp-scope").textContent = scope; document.getElementById("nps-scope").textContent = scope;
@@ -139,7 +189,7 @@ footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
   document.getElementById("comp-t").textContent = T.completion; document.getElementById("nps-t").textContent = T.nps;
   var wb = document.getElementById("wins"); WINS.forEach(function(w){ var b = document.createElement("button"); b.className = "pill"; b.textContent = w[1]; b.setAttribute("data-w", w[0]); b.onclick = function(){ win = w[0]; render(); }; wb.appendChild(b); });
   var bb = document.getElementById("bases"); DATA.bases.forEach(function(x){ var b = document.createElement("button"); b.className = "pill"; b.textContent = x; b.setAttribute("data-b", x); b.onclick = function(){ base = x; render(); }; bb.appendChild(b); });
-  render();
+  renderLights(); render();
 })();
 </script>
 </body></html>
