@@ -52,7 +52,7 @@ footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
       <svg id="nps-svg" viewBox="0 0 560 240"></svg>
       <div class="legend"><span><i></i>NPS for each point</span><span><i class="dash"></i>Trailing 30 days (the dashboard figure)</span><span><i class="tgt"></i>Target</span><span><i class="bars"></i>Responses</span></div>
       <div class="meta" style="margin-top:14px">Scores in this window (0 to 10)</div>
-      <div class="hist" id="hist"></div><div class="hist-x">0<span></span>1<span></span>2<span></span>3<span></span>4<span></span>5<span></span>6<span></span>7<span></span>8<span></span>9<span></span>10</div></div>
+      <div class="hist" id="hist"></div><div class="hist-x"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span></div></div>
   </div>
   <footer>Completion = completed ÷ (accepted − early customer/dispatcher cancels), in-territory auto-assigned jobs only, the Swoop Performance Summary formula; GOA, unsuccessful, reassigned and late cancels count against. NPS = (promoters 9–10 − detractors 0–6) ÷ responses on the same jobs. Both verified against Swoop's gauges per rate agreement. The dotted line is Agero's selection completion from the Insights FAQ: every accepted job including out-of-territory and manual assign, each day's 30-day rolling value averaged over the past 30 days; it is what Agero routes on and it trails the dashboard figure by two to three weeks. Daily points with few jobs swing hard; read them with the count bars. Monthly views pool the whole month.</footer>
 </div>
@@ -128,7 +128,7 @@ footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
     draw("comp-svg", pts, "comp", pts[0] && pts[0].daily ? "t30c" : null, pts[0] && pts[0].daily ? "selc" : null, "s", T.completion, lo, 100, function(v){ return v + "%"; });
     var nlo = Math.min(0, Math.floor((Math.min.apply(null, pts.map(function(p){ return p.nps == null ? 100 : p.nps; })) - 10) / 25) * 25);
     draw("nps-svg", pts, "nps", pts[0] && pts[0].daily ? "t30n" : null, null, "P", T.nps, nlo, 100, function(v){ return v; }, true);
-    var hist = [0,0,0,0,0,0,0,0,0,0,0]; pts.forEach(function(p){ for (var i = p.i0; i <= p.i1; i++) for (var v = 0; v <= 10; v++) hist[v] += o.h[i][v]; });
+    var hist = [0,0,0,0,0,0,0,0,0,0,0]; (win === "yesterday" ? [pts[pts.length - 1]] : pts).forEach(function(p){ for (var i = p.i0; i <= p.i1; i++) for (var v = 0; v <= 10; v++) hist[v] += o.h[i][v]; });
     var mx = Math.max(1, Math.max.apply(null, hist)), el = document.getElementById("hist"); el.innerHTML = "";
     hist.forEach(function(c, v){ var d = document.createElement("div"); d.className = v >= 9 ? "p" : (v <= 6 ? "d" : "n"); d.style.height = Math.max(2, c / mx * 100) + "%"; if (c) d.innerHTML = "<b>" + c + "</b>"; el.appendChild(d); });
     document.querySelectorAll("#wins .pill").forEach(function(b){ b.classList.toggle("active", b.getAttribute("data-w") === win); });
