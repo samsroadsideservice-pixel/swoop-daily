@@ -35,8 +35,10 @@ svg{display:block;width:100%;height:auto;margin-top:10px}
 .hist div.p{background:var(--good)} .hist div.n{background:var(--warn)} .hist div.d{background:var(--bad)}
 .hist div b{position:absolute;top:-16px;left:0;right:0;text-align:center;font-size:11px;color:var(--ink-2);font-weight:600}
 .hist-x{display:grid;grid-template-columns:repeat(11,1fr);gap:4px;font-size:11px;color:var(--muted);text-align:center;margin-top:3px}
+
 .lights{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:0 0 6px}
-.light{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 14px;cursor:pointer;min-width:0}
+.light{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 14px;cursor:pointer;min-width:0;color:inherit;text-decoration:none}
+a.light:hover{border-color:var(--accent)}
 .light .lamp{width:48px;height:48px;border-radius:50%;grid-row:1/4;align-self:start;background:var(--line);box-shadow:inset 0 -3px 6px rgba(0,0,0,.12)}
 .light.good .lamp{background:var(--good)} .light.warn .lamp{background:var(--warn)} .light.bad .lamp{background:var(--bad)}
 .light .nm{font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;font-size:21px;font-weight:700;line-height:1.1}
@@ -45,7 +47,12 @@ svg{display:block;width:100%;height:auto;margin-top:10px}
 .dots{display:flex;gap:6px;align-items:center;margin-top:6px;flex-wrap:wrap} .dots i{width:12px;height:12px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line);display:inline-block}
 .dots i.good{background:var(--good);border-color:var(--good)} .dots i.warn{background:var(--warn);border-color:var(--warn)} .dots i.bad{background:var(--bad);border-color:var(--bad)} .dots span{font-size:11px;color:var(--muted);margin-left:2px}
 .light .next{grid-column:1/3;font-size:13px;color:var(--ink-2);margin-top:6px;padding-top:6px;border-top:1px dashed var(--line);line-height:1.4} .light .next b{font-weight:600} .light .next b.good{color:var(--good)} .light .next b.warn{color:var(--warn)} .light .next b.bad{color:var(--bad)}
+.light .days{grid-column:1/3;margin-top:6px;padding-top:6px;border-top:1px dashed var(--line);font-size:13px;color:var(--ink-2)}
+.light .days summary{cursor:pointer;font-weight:600;color:var(--ink-2)} .light .days ul{margin:6px 0 0;padding:0;list-style:none} .light .days li{display:flex;gap:8px;align-items:flex-start;padding:4px 0;border-bottom:1px dashed var(--line);line-height:1.35} .light .days li:last-child{border-bottom:0}
+.light .days li i{width:10px;height:10px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line);display:inline-block;flex:none;margin-top:4px} .light .days li i.good{background:var(--good);border-color:var(--good)} .light .days li i.warn{background:var(--warn);border-color:var(--warn)} .light .days li i.bad{background:var(--bad);border-color:var(--bad)}
+.light .days li b{font-weight:600;color:var(--ink);white-space:nowrap}
 .lights-note{color:var(--muted);font-size:12px;margin:0 0 18px;line-height:1.45}
+
 .tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:6px 9px;border-radius:6px;white-space:nowrap;z-index:9;display:none}
 footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
 </style>
@@ -54,8 +61,8 @@ footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
   <h1>Swoop Trends</h1>
   <div class="sub">Data through Tuesday Oct 27, 2026 · same exports and formulas as the <a href="../">daily dashboard</a>, verified against Swoop's Performance Summary gauges · updated with the morning run</div>
   <div class="eyebrow" style="margin-bottom:8px">Yesterday's light · Tuesday Oct 27, 2026</div>
-  <div class="lights" id="lights"></div>
-  <div class="lights-note">Did yesterday pull the 30-day score down? <b>Green</b>: no. <b>Yellow</b>: yes, a survey below the line, or two or more jobs not completed (one non-complete is routine and does not turn the light). <b>Red</b>: the same score pulled down two days running, or two detractors or four non-completes inside two days. Dots are the last seven days. Coasting = where the 30-day lands in a week if nothing new comes in, so only what ages out moves it; the dates say when the next bad survey or non-complete leaves on its own. Tap a light to open that base. Surveys that arrive late can change yesterday's light the next morning.</div>
+  <div class="lights" id="lights"><div class="light good" data-base="Indy Main"><div class="lamp"></div><div class="nm">Indy Main<b>GREEN</b></div><div class="why">17 of 17 completed · 7 surveys, all 9s and 10s.</div><div class="dots"><i class="good" title="Oct 21: GREEN · 5 of 5 completed · 3 surveys, all 9s and 10s."></i><i class="good" title="Oct 22: GREEN · 7 of 8 completed · 4 surveys, all 9s and 10s."></i><i class="warn" title="Oct 23: YELLOW · 1 survey below the line (a 7). Pulled the 30-day NPS down."></i><i class="warn" title="Oct 24: YELLOW · 3 of 17 not completed. Pulled the 30-day completion down."></i><i class="bad" title="Oct 25: RED · Completion pulled down two days running. Sun: 1 detractor (a 0), 2 of 17 not completed. Sat: 3 of 17 not completed."></i><i class="bad" title="Oct 26: RED · NPS pulled down two days running. Mon: 1 detractor (a 5). Sun: 1 detractor (a 0), 2 of 17 not completed."></i><i class="good" title="Oct 27: GREEN · 17 of 17 completed · 7 surveys, all 9s and 10s."></i><span>last 7 days, oldest first</span></div><div class="next">Coasting to Tue Nov 3 with no new surveys or jobs: NPS <b class="good">86</b> (now 87) · completion <b class="good">93.5%</b> (now 93%).<br>Next detractor leaves the window <b>Nov 15</b> · next non-complete leaves <b>Nov 1</b>.</div><details class="days"><summary>Day by day, newest first</summary><ul><li><i class="good"></i><b>Tue Oct 27</b> GREEN · 17 of 17 completed · 7 surveys, all 9s and 10s.</li><li><i class="bad"></i><b>Mon Oct 26</b> RED · NPS pulled down two days running. Mon: 1 detractor (a 5). Sun: 1 detractor (a 0), 2 of 17 not completed.</li><li><i class="bad"></i><b>Sun Oct 25</b> RED · Completion pulled down two days running. Sun: 1 detractor (a 0), 2 of 17 not completed. Sat: 3 of 17 not completed.</li><li><i class="warn"></i><b>Sat Oct 24</b> YELLOW · 3 of 17 not completed. Pulled the 30-day completion down.</li><li><i class="warn"></i><b>Fri Oct 23</b> YELLOW · 1 survey below the line (a 7). Pulled the 30-day NPS down.</li><li><i class="good"></i><b>Thu Oct 22</b> GREEN · 7 of 8 completed · 4 surveys, all 9s and 10s.</li><li><i class="good"></i><b>Wed Oct 21</b> GREEN · 5 of 5 completed · 3 surveys, all 9s and 10s.</li></ul></details></div><div class="light good" data-base="South Indy"><div class="lamp"></div><div class="nm">South Indy<b>GREEN</b></div><div class="why">5 of 5 completed · 4 surveys, all 9s and 10s.</div><div class="dots"><i class="good" title="Oct 21: GREEN · 4 of 4 completed · 2 surveys, all 9s and 10s."></i><i class="warn" title="Oct 22: YELLOW · 3 of 6 not completed. Pulled the 30-day completion down."></i><i class="good" title="Oct 23: GREEN · 3 of 3 completed · 3 surveys, all 9s and 10s."></i><i class="warn" title="Oct 24: YELLOW · 1 detractor (a 1). Pulled the 30-day NPS down."></i><i class="good" title="Oct 25: GREEN · 4 of 4 completed · 1 survey, all 9s and 10s."></i><i class="good" title="Oct 26: GREEN · 5 of 5 completed · 3 surveys, all 9s and 10s."></i><i class="good" title="Oct 27: GREEN · 5 of 5 completed · 4 surveys, all 9s and 10s."></i><span>last 7 days, oldest first</span></div><div class="next">Coasting to Tue Nov 3 with no new surveys or jobs: NPS <b class="warn">80</b> (now 82) · completion <b class="good">93.4%</b> (now 88%).<br>Next detractor leaves the window <b>Nov 9</b> · next non-complete leaves <b>Oct 29</b>.</div><details class="days"><summary>Day by day, newest first</summary><ul><li><i class="good"></i><b>Tue Oct 27</b> GREEN · 5 of 5 completed · 4 surveys, all 9s and 10s.</li><li><i class="good"></i><b>Mon Oct 26</b> GREEN · 5 of 5 completed · 3 surveys, all 9s and 10s.</li><li><i class="good"></i><b>Sun Oct 25</b> GREEN · 4 of 4 completed · 1 survey, all 9s and 10s.</li><li><i class="warn"></i><b>Sat Oct 24</b> YELLOW · 1 detractor (a 1). Pulled the 30-day NPS down.</li><li><i class="good"></i><b>Fri Oct 23</b> GREEN · 3 of 3 completed · 3 surveys, all 9s and 10s.</li><li><i class="warn"></i><b>Thu Oct 22</b> YELLOW · 3 of 6 not completed. Pulled the 30-day completion down.</li><li><i class="good"></i><b>Wed Oct 21</b> GREEN · 4 of 4 completed · 2 surveys, all 9s and 10s.</li></ul></details></div></div>
+  <div class="lights-note">Did yesterday pull the 30-day score down? <b>Green</b>: no. <b>Yellow</b>: yes, a survey below the line, or two or more jobs not completed (one non-complete is routine and does not turn the light). <b>Red</b>: the same score pulled down two days running, or two detractors or four non-completes inside two days. Dots are the last seven days. Coasting = where the 30-day lands in a week if nothing new comes in, so only what ages out moves it; the dates say when the next bad survey or non-complete leaves on its own. Tap a light to open that base in the charts; "Day by day" under each light explains every dot. Surveys that arrive late can change yesterday's light the next morning.</div>
   <div class="bar"><span class="lbl">Window</span><div class="pills" id="wins"></div></div>
   <div class="bar"><span class="lbl">Base</span><div class="pills" id="bases"></div></div>
   <div class="grid">
@@ -131,56 +138,6 @@ footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
       tip.textContent = txt; tip.style.display = "block"; tip.style.left = Math.min(window.innerWidth - tip.offsetWidth - 8, e.clientX + 12) + "px"; tip.style.top = (e.clientY + 14) + "px"; };
     svg.onmouseleave = function(){ tip.style.display = "none"; };
   }
-  var DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-  function listScores(a){ if (!a.length) return ""; if (a.length === 1) return (a[0] === 8 ? "an " : "a ") + a[0]; return a.slice(0, -1).join(", ") + " and " + a[a.length - 1]; }
-  function dayInfo(o, i){
-    var s = o.s[i], c = o.c[i], r = o.P[i] + o.N[i] + o.D[i], f = {i: i, s: s, c: c, miss: s - c, r: r, D: o.D[i], N: o.N[i], info: s > 0 || r > 0, hurtN: false, hurtC: false, det: [], neu: []};
-    for (var v = 0; v <= 10; v++) for (var k = 0; k < o.h[i][v]; k++) (v <= 6 ? f.det : v <= 8 ? f.neu : []).push(v);
-    if (r){ var ln = tr30(o, i - 1, "n"); f.npsDay = npsOf(o.P[i], o.N[i], o.D[i]); if (ln != null && f.npsDay < ln - 0.5) f.hurtN = true; }
-    if (s){ var lc = tr30(o, i - 1, "c"); f.compDay = pct(c, s); if (lc != null && f.compDay < lc - 0.5 && f.miss >= 2) f.hurtC = true; }   // one non-complete is routine; two or more below the line counts
-    f.hurt = f.hurtN || f.hurtC; return f;
-  }
-  function parts(f){
-    var a = [];
-    if (f.D) a.push(f.D + " detractor" + (f.D > 1 ? "s" : "") + " (" + listScores(f.det) + ")");
-    else if (f.hurtN) a.push(f.N + " survey" + (f.N > 1 ? "s" : "") + " below the line (" + listScores(f.neu) + ")");
-    if (f.hurtC) a.push(f.miss + " of " + f.s + " not completed");
-    return a;
-  }
-  function light(o, i){
-    var y = dayInfo(o, i), out = {y: y};
-    if (!y.info){ out.lvl = "none"; out.word = "NO JOBS"; out.why = "No scorable jobs or surveys that day."; return out; }
-    var p = null; for (var k = i - 1; k >= Math.max(0, i - 7); k--){ var q = dayInfo(o, k); if (q.info){ p = q; break; } }
-    var d1 = i > 0 ? dayInfo(o, i - 1) : null, D2 = y.D + (d1 ? d1.D : 0), M2 = y.miss + (d1 ? d1.miss : 0);
-    var red = (p && ((y.hurtN && p.hurtN) || (y.hurtC && p.hurtC))) ? ((y.hurtN && p.hurtN) ? "NPS" : "Completion") + " pulled down two days running" : D2 >= 2 ? D2 + " detractors in two days" : M2 >= 4 ? M2 + " not completed in two days" : null;
-    if (red){ out.lvl = "bad"; out.word = "RED"; out.why = red + ". " + DOW[dayDate(i).getDay()] + ": " + (parts(y).join(", ") || "clean") + ". " + DOW[dayDate(p.i).getDay()] + ": " + (parts(p).join(", ") || "clean") + "."; }
-    else if (y.hurt){ out.lvl = "warn"; out.word = "YELLOW"; out.why = parts(y).join(" · ") + ". Pulled the 30-day " + (y.hurtN && y.hurtC ? "NPS and completion" : y.hurtN ? "NPS" : "completion") + " down."; }
-    else { out.lvl = "good"; out.word = "GREEN"; out.why = (y.s ? y.c + " of " + y.s + " completed" : "no scorable jobs") + " · " + (y.r ? y.r + " survey" + (y.r > 1 ? "s" : "") + (y.N ? ", NPS " + y.npsDay + ", held the line" : ", all 9s and 10s") : "no surveys yet") + "."; }
-    return out;
-  }
-  function outlook(o, last){
-    var end = last + 7, i0 = end - 29, r = {};                        // window on the morning seven days out, with no new jobs or surveys
-    r.nps = npsOf(sum(o.P, i0, last), sum(o.N, i0, last), sum(o.D, i0, last)); r.comp = pct(sum(o.c, i0, last), sum(o.s, i0, last));
-    r.npsNow = tr30(o, last, "n"); r.compNow = tr30(o, last, "c"); r.date = dayDate(end);
-    for (var i = last - 29; i <= last; i++){ if (r.det == null && o.D[i] > 0) r.det = dayDate(i + 30); if (r.miss == null && o.s[i] - o.c[i] > 0) r.miss = dayDate(i + 30); }
-    return r;
-  }
-  function nextLine(o, last){
-    var x = outlook(o, last), when = DOW[x.date.getDay()] + " " + fmtD(x.date);
-    var a = "Coasting to " + when + " with no new surveys or jobs: NPS <b class=\"" + cls(x.nps, T.nps) + "\">" + (x.nps == null ? "—" : x.nps) + "</b>" + (x.npsNow != null && x.nps != null ? " (now " + x.npsNow + ")" : "") + " · completion <b class=\"" + cls(x.comp, T.completion) + "\">" + (x.comp == null ? "—" : x.comp + "%") + "</b>" + (x.compNow != null && x.comp != null ? " (now " + x.compNow + "%)" : "") + ".";
-    var b = "Next detractor leaves the window " + (x.det ? "<b>" + fmtD(x.det) + "</b>" : "<b>never, none in the window</b>") + " · next non-complete leaves " + (x.miss ? "<b>" + fmtD(x.miss) + "</b>" : "<b>never, none in the window</b>") + ".";
-    return '<div class="next">' + a + "<br>" + b + "</div>";
-  }
-  function renderLights(){
-    var el = document.getElementById("lights"), last = nDays - 1; el.innerHTML = "";
-    DATA.bases.filter(function(b){ return b !== DATA.bases[0]; }).forEach(function(b){
-      var o = DATA.d[b], L = light(o, last), card = document.createElement("div"); card.className = "light " + L.lvl;
-      var dots = ""; for (var k = last - 6; k <= last; k++){ var lk = light(o, k); dots += '<i class="' + lk.lvl + '" title="' + fmtD(dayDate(k)) + ": " + lk.word + (lk.lvl === "none" ? "" : " · " + lk.why.replace(/"/g, "'")) + '"></i>'; }
-      card.innerHTML = '<div class="lamp"></div><div class="nm">' + b + '<b>' + L.word + '</b></div><div class="why">' + L.why + '</div><div class="dots">' + dots + '<span>last 7 days, oldest first</span></div>' + nextLine(o, last);
-      card.onclick = function(){ base = b; win = "7"; render(); document.getElementById("p-comp").scrollIntoView({behavior: "smooth", block: "start"}); };
-      el.appendChild(card);
-    });
-  }
   function render(){
     var o = DATA.d[base], pts = points(o), h = headline(pts), scope = (win === "yesterday" ? "yesterday" : win === "ytd" ? asOf.getFullYear() + " to date" : win === "ly" ? String(asOf.getFullYear() - 1) : "last " + win + " days") + " · " + base;
     document.getElementById("comp-scope").textContent = scope; document.getElementById("nps-scope").textContent = scope;
@@ -203,7 +160,10 @@ footer{color:var(--muted);font-size:12px;margin-top:24px;line-height:1.5}
   document.getElementById("comp-t").textContent = T.completion; document.getElementById("nps-t").textContent = T.nps;
   var wb = document.getElementById("wins"); WINS.forEach(function(w){ var b = document.createElement("button"); b.className = "pill"; b.textContent = w[1]; b.setAttribute("data-w", w[0]); b.onclick = function(){ win = w[0]; render(); }; wb.appendChild(b); });
   var bb = document.getElementById("bases"); DATA.bases.forEach(function(x){ var b = document.createElement("button"); b.className = "pill"; b.textContent = x; b.setAttribute("data-b", x); b.onclick = function(){ base = x; render(); }; bb.appendChild(b); });
-  renderLights(); render();
+  document.querySelectorAll(".light").forEach(function(card){ card.onclick = function(e){ if (e.target.closest("details")) return; base = card.getAttribute("data-base"); win = "7"; render(); document.getElementById("p-comp").scrollIntoView({behavior: "smooth", block: "start"}); }; });
+  var qb = new URLSearchParams(location.search).get("base");      // the daily page links here with ?base=<rate agreement>
+  if (qb && DATA.bases.indexOf(qb) >= 0){ base = qb; win = "7"; document.querySelectorAll(".light").forEach(function(card){ var d = card.querySelector("details"); if (d) d.open = card.getAttribute("data-base") === qb; }); }
+  render();
 })();
 </script>
 </body></html>
